@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import NavBar from '../components/NavBar.js'; 
-import Footer from '../components/Footer.js';
-import Card from '../components/card-component.jsx'
+// import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar.jsx'; 
+// import Footer from '../components/Footer.jsx';
+import Card from '../components/CardComponent.jsx'
 
 function HomePage() {
   return (
