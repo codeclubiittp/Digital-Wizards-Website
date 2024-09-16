@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left .logo {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.footer-left p {
+    margin: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    text-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    padding-bottom: 20px;
+    justify-content: end;
+    flex-wrap: nowrap;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 80px;
+    text-wrap: nowrap;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.footer-links ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+
+}
+
+@media (max-width: 575px) {
+    .footer-left .logo {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+    
+    .footer-left p {    
+        margin: 0px;
+        font-weight: 700;
+        font-size: 40px;
+        text-wrap: wrap;
+    }
+
+    .footer-links {
+        display: block;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links ul {
+        list-style-type: none;
+        padding: 20px;
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 576px){
+    .footer-left {
+        display: flex;
+        width: 768px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex: 2;
+        padding-bottom: 20px;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .footer-links ul {
+        list-style-type: none;
+        padding: 20px;
+        text-wrap: nowrap;
+    }   
+}
