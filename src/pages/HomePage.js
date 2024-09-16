@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../components/NavBar.jsx'; 
 // import Footer from '../components/Footer.jsx';
 import Card from '../components/CardComponent.jsx'
+import Footer from '../components/Footer.jsx';
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       {/* <Link to="/about">Go to About Page</Link> */}
       {/* <Footer/> */}
       <Card />
+      <Footer />
     </div>
   );
 }
