@@ -29,7 +29,8 @@ function Footer(){
             </div>
     
             <div class="footer-bottom">
-                <p>&copy; Copyright. All rights reserved.</p>
+            <p class="copyrights">© Copyright. All rights reserved.</p>
+            <p class="owner">Made with 🩵 by Team Web Development.</p>
             </div>
         </div>
     </footer>
