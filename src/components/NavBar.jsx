@@ -31,7 +31,7 @@ const darkTheme = createTheme({
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [darkMode, setDarkMode] = React.useState(false); // State to track the theme
+  const [darkMode, setDarkMode] = React.useState(true); // State to track the theme
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline /> {/* Apply the theme globally */}
-      <AppBar position="sticky" sx={{ backgroundColor: darkMode ? darkTheme.palette.appBar.background : lightTheme.palette.appBar.background }}>
+      <AppBar position="fixed" sx={{ backgroundColor: darkMode ? darkTheme.palette.appBar.background : lightTheme.palette.appBar.background }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
 
