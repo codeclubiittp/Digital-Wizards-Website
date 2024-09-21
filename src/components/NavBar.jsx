@@ -1,22 +1,11 @@
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import Switch from '@mui/material/Switch';
 import { CssBaseline } from '@mui/material';
-
+import { AppBar, Box, Toolbar, Typography, IconButton, Menu, Button, Switch } from '@mui/material';
 const pages = ['Home', 'About Us', 'Events', 'Workshops', 'Projects','Contact'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 // Define light and dark themes
 const lightTheme = createTheme({
@@ -42,22 +31,14 @@ const darkTheme = createTheme({
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [darkMode, setDarkMode] = React.useState(false); // State to track the theme
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   const handleToggleTheme = () => {
@@ -184,39 +165,6 @@ function ResponsiveAppBar() {
                   </Button>
                 ))}
                 
-                {/* User Settings */}
-                {/* <Box sx={{ flexGrow: 0 }}>
-                  <Tooltip title="Open settings">
-                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                      <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                    </IconButton>
-                  </Tooltip>
-                  <Menu
-                    sx={{ mt: '45px' }}
-                    id="menu-appbar"
-                    anchorEl={anchorElUser}
-                    anchorOrigin={{
-                      vertical: 'top',
-                      horizontal: 'right',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                      vertical: 'top',
-                      horizontal: 'right',
-                    }}
-                    open={Boolean(anchorElUser)}
-                    onClose={handleCloseUserMenu}
-                  >
-                    {settings.map((setting) => (
-                      <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                        <Typography sx={{ textAlign: 'center' }}>
-                          {setting}
-                        </Typography>
-                      </MenuItem>
-                    ))}
-                  </Menu>
-                </Box> */}
-
                 {/* Theme Toggle */}
                 <Box sx={{ flexGrow: 0, mr: 2 }}>
                   <Switch
@@ -230,8 +178,6 @@ function ResponsiveAppBar() {
                 </Box>
               </Box>
             </Box>
-
-
           </Toolbar>
         </Container>
       </AppBar>
