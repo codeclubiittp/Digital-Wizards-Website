@@ -1,5 +1,4 @@
-import '../css/Card.css'
-
+import "../css/card.css";
 
 // function Cardd() {
 //     return (
@@ -16,20 +15,28 @@ import '../css/Card.css'
 function Card() {
   return (
     <>
-    <div className='card'>
-      <div className='bg'>
-        <img src="https://media.istockphoto.com/id/1289245135/photo/front-view-of-brown-bear-isolated-on-black-background-portrait-of-kamchatka-bear.jpg?s=2048x2048&w=is&k=20&c=aR78lsbCaatCqYGsy_G1GWmqjtIZJTUDgi01I2H3yjA=" alt="" />
+      <div className="card">
+        <div className="bg">
+          <img
+            src="https://media.istockphoto.com/id/1289245135/photo/front-view-of-brown-bear-isolated-on-black-background-portrait-of-kamchatka-bear.jpg?s=2048x2048&w=is&k=20&c=aR78lsbCaatCqYGsy_G1GWmqjtIZJTUDgi01I2H3yjA="
+            alt=""
+          />
+        </div>
+        <div className="texts">
+          <h1>WEB DEVELOPMENT</h1>
+          <p>Turning Years of data into instant insights: Fortune</p>
+        </div>
+        <div className="hidden">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, explicabo sit! Dolorem deserunt fuga architecto
+            recusandae. Beatae a ipsum nam.
+          </p>
+        </div>
       </div>
-      <div className='texts'>
-        <h1>WEB DEVELOPMENT</h1>
-        <p>Turning Yeras of data into instant insights: Fortune</p>
-      </div>
-      <div className='hidden'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, explicabo sit! Dolorem deserunt fuga architecto recusandae. Beatae a ipsum nam.</p>
-      </div>
-    </div>
     </>
-  )
+  );
 }
 
-export default Card
+export default Card;

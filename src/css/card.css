@@ -4,6 +4,7 @@
     height: 22rem;
     padding: 0;
     overflow: hidden;
+    margin: 1rem; /*adjust this if required to match our page*/
 
 
 }

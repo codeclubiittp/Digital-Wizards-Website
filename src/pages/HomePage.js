@@ -4,14 +4,23 @@ import NavBar from '../components/NavBar.jsx';
 import Card from '../components/CardComponent.jsx'
 import Footer from '../components/Footer.jsx';
 import Hero from '../components/Hero.jsx';
-
+import NoteFromFA from '../components/NoteFromFacultyAdvisor.jsx';
 function HomePage() {
   return (
     <div>
       <NavBar /> 
       <Hero />
       {/* <Link to="/about">Go to About Page</Link> */}
-      <Card />
+
+      {/* convert the below 5 lines into single component and write mediaqueries */}
+      <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+
+      
+      <NoteFromFA/>
       <Footer />
     </div>
   );

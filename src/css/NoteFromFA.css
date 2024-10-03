@@ -1,0 +1,35 @@
+.horizontalFlex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.verticalFlex{
+    flex:1;
+    padding: 2rem;
+}
+
+.left{
+    
+    background-color: white;
+
+   
+}
+.right{
+    
+    background-color: skyblue;
+ 
+
+}
+
+img{
+    width: 120px;
+    border-radius: 60px;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+h1 ,h6{
+    color: black;
+}
