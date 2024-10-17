@@ -4,7 +4,8 @@ import NavBar from '../components/NavBar.jsx';
 import Card from '../components/CardComponent.jsx'
 import Footer from '../components/Footer.jsx';
 import Hero from '../components/Hero.jsx';
-import NoteFromFA from '../components/NoteFromFacultyAdvisor.jsx';
+import NoteFromFA from '../components/NoteFromFacultyAdvisor.jsx';import Collab from '../components/Collab.jsx';
+
 function HomePage() {
   return (
     <div>
@@ -16,7 +17,9 @@ function HomePage() {
       <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
         <Card />
         <Card />
-        <Card />
+        {/* <Card /> */}
+      
+      <Collab />
       </div>
 
       

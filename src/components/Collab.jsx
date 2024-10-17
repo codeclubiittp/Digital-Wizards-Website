@@ -26,4 +26,4 @@ function Collab(){
     );
 }
 
-export default Footer;
+export default Collab;
