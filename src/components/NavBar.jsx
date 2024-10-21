@@ -1,187 +1,90 @@
-import * as React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import MenuItem from '@mui/material/MenuItem';
-import { CssBaseline } from '@mui/material';
-import { AppBar, Box, Toolbar, Typography, IconButton, Menu, Button, Switch } from '@mui/material';
-const pages = ['Home', 'About Us', 'Events', 'Workshops', 'Projects','Contact'];
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
-// Define light and dark themes
-const lightTheme = createTheme({
-  palette: {
-    mode: 'light',
-    appBar: {
-      background: '#ffffff', // White background for light mode
-      color: '#000000', // Black text for light mode
-    },
-  },
-});
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-    appBar: {
-      background: '#333333', // Dark background for dark mode
-      color: '#ffffff', // White text for dark mode
-    },
-  },
-});
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsScrolled(offset > 120);
+    };
 
-
-function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [darkMode, setDarkMode] = React.useState(true); // State to track the theme
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleToggleTheme = () => {
-    setDarkMode(!darkMode); // Toggle dark mode
-  };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <CssBaseline /> {/* Apply the theme globally */}
-      <AppBar position="fixed" sx={{ backgroundColor: darkMode ? darkTheme.palette.appBar.background : lightTheme.palette.appBar.background }}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
+        isScrolled ? 'bg-gray-800' : 'bg-transparent'
+      } text-white p-4`}
+    >
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <div className="flex-shrink-0">
+          <img
+            src="/images/domainLogos/DW_darkmode.png" // Replace with your actual logo path
+            alt="Logo"
+            className="h-24 w-auto"
+          />
+        </div>
 
-            {/* Mobile Menu */}
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-              <MenuIcon sx={{color: darkMode ? darkTheme.palette.appBar.color : lightTheme.palette.appBar.color}}/>
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{ display: { xs: 'block', md: 'none' } }}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="items-center">
-              <img
-                src={darkMode ? "./images/domainLogos/DW_darkmode.png" : "./images/domainLogos/DW.png"}
-                alt="DW Logo"
-                className="rounded h-20 mr-2"
-              />
+        {/* Menu Button */}
+        <div className="md:hidden flex items-center">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
+            {isMenuOpen ? <XMarkIcon className="h-8 w-8" /> : <Bars3Icon className="h-8 w-8" />}
+          </button>
+        </div>
 
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.1rem',
-                color: darkMode ? darkTheme.palette.appBar.color : lightTheme.palette.appBar.color,
-                textDecoration: 'none',
-              }}
-            >
-              Digital Wizards
-            </Typography>
-            </Box>
+        {/* Menu Items */}
+        <div className={`md:flex items-center space-x-8 ${isMenuOpen ? 'block' : 'hidden md:block'}`}>
+          <Link to="#home" className="hover:text-gray-400 transition">
+            Home
+          </Link>
+          <Link to="#about" className="hover:text-gray-400 transition">
+            About
+          </Link>
+          <Link to="#contact" className="hover:text-gray-400 transition">
+            Contact
+          </Link>
+        </div>
+      </div>
 
-            {/* Theme Toggle */}
-            <Box sx={{ flexGrow: 0, mr: 2 , display: { xs: 'flex', md: 'none' } ,alignItems:'center'}} >
-              <Switch
-                checked={darkMode}
-                onChange={handleToggleTheme}
-                inputProps={{ 'aria-label': 'theme toggle' }}
-              />
-              <Typography sx={{ display: 'inline-block',color: darkMode ? darkTheme.palette.appBar.color : lightTheme.palette.appBar.color,}}>
-                {darkMode ? 'Dark' : 'Light'}
-              </Typography>
-            </Box>
-
-            {/* Desktop Menu */}
-            <Box sx={{ flexGrow: 1,  display: { xs: 'none', md: 'flex' } , alignItems: 'center' }}>
-              {/* Left Section: Logo and Title */}
-              <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <img
-                  src={darkMode ? "./images/domainLogos/DW_darkmode.png" : "./images/domainLogos/DW.png"}
-                  alt="DW Logo"
-                  className="rounded h-20 mr-2"
-                />
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="a"
-                  href="#app-bar-with-responsive-menu"
-                  sx={{
-                    mr: 2,
-                    fontFamily: 'monospace',
-                    fontWeight: 700,
-                    letterSpacing: '.1rem',
-                    color: darkMode ? darkTheme.palette.appBar.color : lightTheme.palette.appBar.color,
-                    textDecoration: 'none',
-                  }}
-                >
-                  Digital Wizards
-                </Typography>
-              </Box>
-
-              {/* Right Section: Menu Items */}
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', alignItems:'center'}}>
-                {pages.map((page) => (
-                  <Button
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    style = {{color: darkMode ? darkTheme.palette.appBar.color : lightTheme.palette.appBar.color}}
-                    sx={{ my: 2, display: 'block' }}
-                  >
-                    {page}
-                  </Button>
-                ))}
-                
-                {/* Theme Toggle */}
-                <Box sx={{ flexGrow: 0, mr: 2 }}>
-                  <Switch
-                    checked={darkMode}
-                    onChange={handleToggleTheme}
-                    inputProps={{ 'aria-label': 'theme toggle' }}
-                  />
-                  <Typography sx={{ display: 'inline-block', color: darkMode ? darkTheme.palette.appBar.color : lightTheme.palette.appBar.color, }}>
-                    {darkMode ? 'Dark' : 'Light'}
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </ThemeProvider>
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-64 bg-gray-800 text-white transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-300 ease-in-out md:hidden z-20`}
+      >
+        <div className="flex justify-between items-center px-4 py-4 border-b border-gray-700">
+          <img
+            src="/images/domainLogos/DW_darkmode.png" // Adjust your logo path
+            alt="Logo"
+            className="h-12 w-auto"
+          />
+          <button onClick={() => setIsMenuOpen(false)} className="text-white">
+            <XMarkIcon className="h-8 w-8" />
+          </button>
+        </div>
+        <div className="mt-8 space-y-6 px-4">
+          <Link to="#home" onClick={() => setIsMenuOpen(false)} className="block text-lg hover:text-gray-400">
+            Home
+          </Link>
+          <Link to="#about" onClick={() => setIsMenuOpen(false)} className="block text-lg hover:text-gray-400">
+            About
+          </Link>
+          <Link to="#contact" onClick={() => setIsMenuOpen(false)} className="block text-lg hover:text-gray-400">
+            Contact
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
-}
-export default ResponsiveAppBar;
+};
+
+export default Navbar;
