@@ -1,4 +1,4 @@
-import "../css/card.css";
+import "../css/Card.css";
 
 // function Cardd() {
 //     return (
@@ -26,7 +26,7 @@ function Card() {
           <h1>WEB DEVELOPMENT</h1>
           <p>Turning Years of data into instant insights: Fortune</p>
         </div>
-        <div className="hidden">
+        <div className="hiddeN">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
             inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit.

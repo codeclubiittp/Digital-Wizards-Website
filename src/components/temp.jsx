@@ -24,9 +24,9 @@ const Navbar = () => {
         isScrolled ? "bg-gray-800" : "bg-transparent"
       } text-white p-4`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div className="inline-block ">
           <img
             src="/images/domainLogos/DW_darkmode.png" // Replace with your actual logo path
             alt="Logo"
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu Items */}
-        <div className={`hidden md:flex items-center space-x-8 `}>
+        <div className={`md:flex items-center space-x-8 `}>
           <Link to="#home" className="hover:text-gray-400 transition">
             Home
           </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-800 text-white transform ${
+        className={`fixed md:hidden top-0 right-0 h-full w-64 bg-gray-800 text-white transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden z-20`}
       >
