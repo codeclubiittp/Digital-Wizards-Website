@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    margin: 3rem;
 
 }
 
@@ -12,13 +13,13 @@
 
 .left{
     
-    background-color: white;
+    background-color: #111827;
 
    
 }
 .right{
     
-    background-color: skyblue;
+    background-color: #1f2937;
  
 
 }
@@ -30,6 +31,6 @@ img{
     margin-top: 2rem;
 }
 
-h1 ,h6{
-    color: black;
+h1 ,h6, p{
+    color: white;
 }

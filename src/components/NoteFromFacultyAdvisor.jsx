@@ -4,10 +4,9 @@ function NoteFromFA() {
   return (
     <div className="horizontalFlex">
       <div className="left verticalFlex">
-        <p style={{ color: "black", fontSize: "3rem" }}>
+        <p style={{ color: "white", fontSize: "3rem" }}>
           Note From Faculty Advisor
         </p>
-        <h6>The picture is temporarily kept for reference</h6>
 
         <img
           src="https://files.iittp.ac.in/images/demo/iit/director.jpg"
@@ -17,7 +16,7 @@ function NoteFromFA() {
       <div className="right verticalFlex">
         <p
           style={{
-            fontSize: "1.2rem",
+            fontSize: "2rem",
             fontWeight: "100",
             marginBottom: "1rem",
           }}
@@ -30,8 +29,7 @@ function NoteFromFA() {
           perspiciatis iure in totam placeat nemo vero iste, dolore, ad,
           reprehenderit sint. Eum quos reiciendis porro, maiores delectus ut
           distinctio beatae sunt ducimus harum maxime aut! Doloremque est
-          possimus aspernatur, voluptas officiis accusamus voluptatum nobis sint
-          quisquam!
+          possimus asperna
         </p>
       </div>
     </div>

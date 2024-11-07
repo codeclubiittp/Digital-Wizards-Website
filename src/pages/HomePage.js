@@ -28,6 +28,7 @@ function HomePage() {
         email="Cs22b040@iittp.ac.in"
         imageUrl="https://ui-avatars.com/api/?name=Prof+ABC&background=random&color=fff&size=200"
       />
+     <NoteFromFA/> 
       {/* <Hero /> */}
       {/* <Link to="/about">Go to About Page</Link> */}
 
