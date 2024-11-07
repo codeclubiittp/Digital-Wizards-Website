@@ -9,7 +9,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      setIsScrolled(offset > 120);
+      setIsScrolled(offset > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,13 +20,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${
-        isScrolled ? "bg-gray-800" : "bg-transparent"
-      } text-white p-4`}
+      className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 
+        ${
+        isScrolled ? "bg-black/70" : "bg-transparent"
+      } 
+      text-white`}
     >
+
+      {/* Laptop Menu */}
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div >
           <img
             src="/images/domainLogos/DW_darkmode.png" // Replace with your actual logo path
             alt="Logo"
@@ -34,7 +38,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Menu Button */}
+        {/*Hamburger Menu Button */}
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
