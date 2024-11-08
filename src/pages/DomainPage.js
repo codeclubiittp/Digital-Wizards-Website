@@ -30,26 +30,27 @@ const DomainPage = () => {
   return (
     <div className="text-white min-h-screen">
       <Navbar />
-      <FallingMatrix />
+      
 
       {/* Domain Logo and Name Section */}
       <div className="flex justify-center items-center py-10">
-        <img src={domainLogo} alt={`${domainName} Logo`} className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-full border-4 border-neon-green shadow-neon" />
+        <img src={domainLogo} alt={`${domainName} Logo`} className="w-32 h-32 sm:w-40 sm:h-40 object-cover border-4 border-neon-green shadow-neon" />
         <div className='flex flex-col justify-start ml-4'>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white">{domainName}</h1>
-          <h1 className="text-lg sm:text-2xl font-semibold text-gray-400">Digital Wizards</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-black">{domainName}</h1>
+          <h1 className="text-lg sm:text-2xl font-bold text-gray-400">Digital Wizards</h1>
         </div>
       </div>
 
       {/* About Domain Section */}
-      <div className="bg-gray-800 bg-opacity-70 text-center py-8 px-6 mx-auto max-w-6xl rounded-lg border border-neon-pink mb-10">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-neon-pink mb-4">About {domainName}</h2>
-        <p className="text-lg text-gray-300">{domainDescription}</p>
+      <div className="bg-slate-300 text-center py-8 px-6 mx-auto max-w-6xl rounded-lg border border-neon-pink mb-10">
+        <h2 className="text-2xl sm:text-4xl text-center text-neon-pink mb-6 font-bold text-gray-800">About {domainName}</h2>
+        <p className="text-lg text-gray-500">{domainDescription}</p>
       </div>
 
       {/* Events Section */}
       <div className="py-10 mx-auto max-w-6xl">
-        <h2 className="text-2xl sm:text-4xl font-semibold text-center text-neon-pink mb-6">Upcoming Events</h2>
+      !
+        <h2 className=" text-2xl sm:text-4xl text-center text-neon-pink mb-6 font-bold text-gray-800">Upcoming Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {events.map((event, index) => (
             <div 
@@ -70,7 +71,7 @@ const DomainPage = () => {
 
       {/* Ongoing Projects Section */}
       <div className="py-10 mx-auto max-w-6xl">
-        <h2 className="text-2xl sm:text-4xl font-semibold text-center text-neon-blue mb-6">Ongoing Projects</h2>
+        <h2 className="text-2xl sm:text-4xl text-center text-neon-pink mb-6 font-bold text-gray-800">Ongoing Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {ongoingProjects.map((project, index) => (
             <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-neon">
@@ -83,7 +84,7 @@ const DomainPage = () => {
 
       {/* Members Section */}
       <div className="py-10 mx-auto max-w-6xl">
-        <h2 className="text-2xl sm:text-4xl font-semibold text-center text-yellow-400 mb-6">Our Members</h2>
+        <h2 className="text-2xl sm:text-4xl text-center text-neon-pink mb-6 font-bold text-gray-800 ">Our Members</h2>
         <div className="flex flex-wrap justify-center gap-6">
           {members.map((member, index) => (
             <ClubMember
