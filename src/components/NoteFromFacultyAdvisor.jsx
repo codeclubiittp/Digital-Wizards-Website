@@ -1,4 +1,4 @@
-import "../css/NoteFromFA.css";
+// import "../css/NoteFromFA.css";
 
 function NoteFromFA() {
   return (

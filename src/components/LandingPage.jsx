@@ -8,14 +8,16 @@ const LandingPage = () => {
     >
       <div className="text-center space-y-6">
         {/* Main Title */}
-        <p className="text-white font-bold leading-none font-instrument-sans 
-          text-[3rem] sm:text-[4rem] md:text-[4rem] lg:text-[6rem] xl:text-[6rem]">
+        <p className="font-bold leading-none font-instrument-sans 
+          text-[3rem] sm:text-[4rem] md:text-[4rem] lg:text-[6rem] xl:text-[6rem]
+          text-transparent bg-clip-text bg-gradient-to-r from-blue-600 from-white via-yellow-100 to-yellow-600">
           Digital Wizards
         </p>
         
         {/* Subtitle */}
-        <p className="text-white font-normal font-ovo
-          text-[1.5rem] sm:text-[2rem] md:text-[3rem] lg:text-[3rem] xl:text-[3rem]">
+        <p className="font-normal font-ovo
+          text-[1.5rem] sm:text-[2rem] md:text-[3rem] lg:text-[3rem] xl:text-[3rem]
+          text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-yellow-100 to-white">
           Code Club - IIT Tirupati
         </p>
 
