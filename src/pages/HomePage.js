@@ -17,18 +17,6 @@ function HomePage() {
       <Navbar/>
       <LandingPage />
       <DomainCards />
-      <ClubMember
-        name="Akilesh P"
-        role="Co-Cordinator"
-        rollNumber="CS22B040"
-        club="Web Development"
-        instagram="https://www.instagram.com/profabc"
-        github="https://github.com/profabc"
-        linkedin="https://www.linkedin.com/in/profabc"
-        email="Cs22b040@iittp.ac.in"
-        imageUrl="https://ui-avatars.com/api/?name=Prof+ABC&background=random&color=fff&size=200"
-      />
-     <NoteFromFA/> 
       {/* <Hero /> */}
       {/* <Link to="/about">Go to About Page</Link> */}
 
