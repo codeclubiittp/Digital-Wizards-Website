@@ -8,14 +8,14 @@ const domains = [
     backgroundImage: 'url("/images/domainLogos/App_Negative.png")'
   },
   {
-    title: 'Web Development',
-    description: 'Building and maintaining websites and web applications.',
-    backgroundImage: 'url("/images/domainLogos/WebDevLogo.png")'
+    title: 'Architecture',
+    description: 'Analyzing and interpreting complex data to drive decisions.',
+    backgroundImage: 'url("/images/domainLogos/C.Arch_Negative.png")'
   },
   {
-    title: 'Software Engineering',
-    description: 'Designing, developing, and testing software systems.',
-    backgroundImage: 'url("/images/domainLogos/DevOps_Negative.png")'
+    title: 'Competitive Programming',
+    description: 'Mastering problem-solving and algorithmic thinking through coding challenges under time and resource constraints.',
+    backgroundImage: 'url("/images/domainLogos/CP_Negative.png")'
   },
   {
     title: 'Cyber Security',
@@ -23,10 +23,15 @@ const domains = [
     backgroundImage: 'url("/images/domainLogos/Cyber_Negative.png")'
   },
   {
-    title: 'Architecture',
-    description: 'Analyzing and interpreting complex data to drive decisions.',
-    backgroundImage: 'url("/images/domainLogos/C.Arch_Negative.png")'
+    title: 'Software Engineering',
+    description: 'Designing, developing, and testing software systems.',
+    backgroundImage: 'url("/images/domainLogos/DevOps_Negative.png")'
   },
+  {
+    title: 'Web Development',
+    description: 'Building and maintaining websites and web applications.',
+    backgroundImage: 'url("/images/domainLogos/WebDevLogo.png")'
+  }
 ];
 
 const DomainCards = () => {

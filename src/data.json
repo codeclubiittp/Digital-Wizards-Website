@@ -1,0 +1,58 @@
+{
+    "app-development": {
+      "domainLogo": "/images/domainLogos/App_Negative.png",
+      "domainName": "App Development",
+      "domainDescription": "Artificial Intelligence (AI) is a field of computer science focused on creating machines that can perform tasks that typically require human intelligence.",
+      "events": [
+        {
+          "name": "AI Workshop",
+          "date": "2024-11-15",
+          "description": "A hands-on workshop on AI.",
+          "backgroundImage": "https://via.placeholder.com/600x400.png"
+        },
+        {
+          "name": "AI Hackathon",
+          "date": "2024-12-01",
+          "description": "Participate in an AI-driven hackathon.",
+          "backgroundImage": "https://via.placeholder.com/600x400.png"
+        }
+      ],
+      "ongoingProjects": [
+        {
+          "title": "AI-based Traffic Management",
+          "description": "Developing an AI solution for traffic optimization."
+        },
+        {
+          "title": "AI for Healthcare",
+          "description": "Using AI to improve healthcare systems."
+        }
+      ],
+      "members": [
+        {
+          "photo": "https://via.placeholder.com/150",
+          "name": "John Doe",
+          "club": "Tech Club",
+          "role": "President",
+          "socials": {
+            "instagram": "https://instagram.com/johndoe",
+            "github": "https://github.com/johndoe",
+            "linkedin": "https://linkedin.com/in/johndoe",
+            "email": "johndoe@example.com"
+          }
+        },
+        {
+          "photo": "https://via.placeholder.com/150",
+          "name": "Jane Smith",
+          "club": "Tech Club",
+          "role": "Vice President",
+          "socials": {
+            "instagram": "https://instagram.com/janesmith",
+            "github": "https://github.com/janesmith",
+            "linkedin": "https://linkedin.com/in/janesmith",
+            "email": "janesmith@example.com"
+          }
+        }
+      ]
+    }
+  }
+  

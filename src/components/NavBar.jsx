@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Logo */}
         <div >
           <img
-            src="/images/domainLogos/DW_darkmode.png" // Replace with your actual logo path
+            src="/images/domainLogos/DW_darkmode.png"
             alt="Logo"
             className="h-24 w-auto"
           />
@@ -54,13 +54,13 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div className={`hidden md:flex items-center space-x-8 `}>
-          <Link to="#home" className="hover:text-gray-400 transition">
+          <Link to="/" className="hover:text-gray-400 transition">
             Home
           </Link>
-          <Link to="#about" className="hover:text-gray-400 transition">
+          <Link to="/about" className="hover:text-gray-400 transition">
             About
           </Link>
-          <Link to="#contact" className="hover:text-gray-400 transition">
+          <Link to="/contact" className="hover:text-gray-400 transition">
             Contact
           </Link>
         </div>
@@ -84,21 +84,21 @@ const Navbar = () => {
         </div>
         <div className="mt-8 space-y-6 px-4">
           <Link
-            to="#home"
+            to="/"
             onClick={() => setIsMenuOpen(false)}
             className="block text-lg hover:text-gray-400"
           >
             Home
           </Link>
           <Link
-            to="#about"
+            to="/about"
             onClick={() => setIsMenuOpen(false)}
             className="block text-lg hover:text-gray-400"
           >
             About
           </Link>
           <Link
-            to="#contact"
+            to="/contact"
             onClick={() => setIsMenuOpen(false)}
             className="block text-lg hover:text-gray-400"
           >

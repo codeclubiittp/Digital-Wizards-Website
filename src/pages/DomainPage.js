@@ -5,54 +5,55 @@ import FallingMatrix from '../components/FallingMatrix';
 import Footer from '../components/Footer';
 import ClubMember from '../components/ClubMember';
 import { ClubMemberCard } from '../components/MemberCard';
+import data from '../data.json'
 
 const DomainPage = () => {
   const { domainId } = useParams();
   
-  const domainLogo = "/images/domainLogos/Cyber_Negative.png";
-  const domainName = "Artificial Intelligence";
-  const domainDescription = "Artificial Intelligence (AI) is a field of computer science focused on creating machines that can perform tasks that typically require human intelligence.";
+//   const domainLogo = "/images/domainLogos/Cyber_Negative.png";
+//   const domainName = "Artificial Intelligence";
+//   const domainDescription = "Artificial Intelligence (AI) is a field of computer science focused on creating machines that can perform tasks that typically require human intelligence.";
 
-  const events = [
-    { name: "AI Workshop", date: "2024-11-15", description: "A hands-on workshop on AI.", backgroundImage: "https://via.placeholder.com/600x400.png" },
-    { name: "AI Hackathon", date: "2024-12-01", description: "Participate in an AI-driven hackathon.", backgroundImage: "https://via.placeholder.com/600x400.png" }
-  ];
+//   const events = [
+//     { name: "AI Workshop", date: "2024-11-15", description: "A hands-on workshop on AI.", backgroundImage: "https://via.placeholder.com/600x400.png" },
+//     { name: "AI Hackathon", date: "2024-12-01", description: "Participate in an AI-driven hackathon.", backgroundImage: "https://via.placeholder.com/600x400.png" }
+//   ];
 
-  const ongoingProjects = [
-    { title: "AI-based Traffic Management", description: "Developing an AI solution for traffic optimization." },
-    { title: "AI for Healthcare", description: "Using AI to improve healthcare systems." }
-  ];
+//   const ongoingProjects = [
+//     { title: "AI-based Traffic Management", description: "Developing an AI solution for traffic optimization." },
+//     { title: "AI for Healthcare", description: "Using AI to improve healthcare systems." }
+//   ];
 
-  // const members = [
-  //   { name: "Prof. ABC", role: "Domain Lead", club: "AI Club", email: "profabc@example.com", imageUrl: "" , instaid:"ceef", githubid:"cref", linkedin:"cfr"},
-  //   { name: "Dr. XYZ", role: "Researcher", club: "AI Club", email: "drxyz@example.com", imageUrl: ""  , instaid:"ceef", githubid:"cref", linkedin:"cfr"}
-  // ];
+//   const members = [ {
+//     photo: 'https://via.placeholder.com/150', // Replace with actual image URL
+//     name: 'John Doe',
+//     club: 'Tech Club',
+//     role: 'President',
+//     socials: {
+//       instagram: 'https://instagram.com/johndoe',
+//       github: 'https://github.com/johndoe',
+//       linkedin: 'https://linkedin.com/in/johndoe',
+//       email: 'johndoe@example.com',
+//     },
+//   }
+//   ,{
+//     photo: 'https://via.placeholder.com/150', // Replace with actual image URL
+//     name: 'John Doe',
+//     club: 'Tech Club',
+//     role: 'President',
+//     socials: {
+//       instagram: 'https://instagram.com/johndoe',
+//       github: 'https://github.com/johndoe',
+//       linkedin: 'https://linkedin.com/in/johndoe',
+//       email: 'johndoe@example.com',
+//     },
+//   }
+// ];
 
-  const members = [ {
-    photo: 'https://via.placeholder.com/150', // Replace with actual image URL
-    name: 'John Doe',
-    club: 'Tech Club',
-    role: 'President',
-    socials: {
-      instagram: 'https://instagram.com/johndoe',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://linkedin.com/in/johndoe',
-      email: 'johndoe@example.com',
-    },
-  }
-  ,{
-    photo: 'https://via.placeholder.com/150', // Replace with actual image URL
-    name: 'John Doe',
-    club: 'Tech Club',
-    role: 'President',
-    socials: {
-      instagram: 'https://instagram.com/johndoe',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://linkedin.com/in/johndoe',
-      email: 'johndoe@example.com',
-    },
-  }
-];
+  // Fetch domain data based on domainId
+  const domainData = data[domainId] || {};
+  const { domainLogo, domainName, domainDescription, events = [], ongoingProjects = [], members = [] } = domainData;
+
   
   return (
     <div className="text-white min-h-screen">
