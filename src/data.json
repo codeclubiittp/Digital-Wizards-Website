@@ -1,58 +1,350 @@
 {
-    "app-development": {
-      "domainLogo": "/images/domainLogos/App_Negative.png",
-      "domainName": "App Development",
-      "domainDescription": "Artificial Intelligence (AI) is a field of computer science focused on creating machines that can perform tasks that typically require human intelligence.",
-      "events": [
-        {
-          "name": "AI Workshop",
-          "date": "2024-11-15",
-          "description": "A hands-on workshop on AI.",
-          "backgroundImage": "https://via.placeholder.com/600x400.png"
-        },
-        {
-          "name": "AI Hackathon",
-          "date": "2024-12-01",
-          "description": "Participate in an AI-driven hackathon.",
-          "backgroundImage": "https://via.placeholder.com/600x400.png"
+  "app-development": {
+    "domainLogo": "/images/domainLogos/App_Negative.png",
+    "domainName": "App Development",
+    "domainDescription": "We’re a passionate team of three, diving deep into the world of app development! Our domain focuses on creating interactive, user-friendly solutions that simplify everyday tasks and enhance connectivity. We also host exciting app dev sessions to exchange ideas, sharpen skills, and inspire innovation—because building great apps starts with a great community!",
+    "events": [
+      {
+        "name": "",
+        "date": "",
+        "description": "",
+        "backgroundImage": ""
+      }
+    ],
+    "ongoingProjects": [
+      {
+        "title": "IIT Tirupati Utility App",
+        "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features."
+      }
+    ],
+    "members": [
+      {
+        "photo": "",
+        "name": "Chitraksh Vasantati",
+        "club": "App Development",
+        "role": "Domain Head",
+        "socials": {
+          "instagram": "cv_23076",
+          "github": "VasantatiChitraksh",
+          "linkedin": "chitraksh-vasantati",
+          "email": "cs23b054@iittp.ac.in"
         }
-      ],
-      "ongoingProjects": [
-        {
-          "title": "AI-based Traffic Management",
-          "description": "Developing an AI solution for traffic optimization."
-        },
-        {
-          "title": "AI for Healthcare",
-          "description": "Using AI to improve healthcare systems."
+      },
+      {
+        "photo": "",
+        "name": "Anirudh Arrepu",
+        "club": "App Development",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "anirudharrepu",
+          "github": "AnirudhArrepu",
+          "linkedin": "AnirudhArrepu",
+          "email": "cs23b008@iittp.ac.in"
         }
-      ],
-      "members": [
-        {
-          "photo": "https://via.placeholder.com/150",
-          "name": "John Doe",
-          "club": "Tech Club",
-          "role": "President",
-          "socials": {
-            "instagram": "https://instagram.com/johndoe",
-            "github": "https://github.com/johndoe",
-            "linkedin": "https://linkedin.com/in/johndoe",
-            "email": "johndoe@example.com"
-          }
-        },
-        {
-          "photo": "https://via.placeholder.com/150",
-          "name": "Jane Smith",
-          "club": "Tech Club",
-          "role": "Vice President",
-          "socials": {
-            "instagram": "https://instagram.com/janesmith",
-            "github": "https://github.com/janesmith",
-            "linkedin": "https://linkedin.com/in/janesmith",
-            "email": "janesmith@example.com"
-          }
+      },
+      {
+        "photo": "",
+        "name": "Niranjan M",
+        "club": "App Development",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "iamnir2401",
+          "github": "all-coder",
+          "linkedin": "niranjan-m-038806292",
+          "email": "me23b036@iittp.ac.in"
         }
-      ]
-    }
+      }
+    ]
+  },
+  "architecture": {
+    "domainLogo": "/images/domainLogos/C.Arch_Negative.png",
+    "domainName": "Architecture",
+    "domainDescription": "Explore the cutting-edge technologies behind High-Performance Computing (HPC)! This domain focuses on the principles of CPU and GPU architectures, parallel processing, and system scalability. Learn how modern processors are designed, how GPUs accelerate computations, and how parallel algorithms transform the way we solve large-scale problems. Whether you're passionate about optimizing performance, exploring distributed computing, or advancing HPC applications, this domain provides the knowledge and skills to push the boundaries of computational efficiency.",
+    "events": [
+      {
+        "name": "",
+        "date": "",
+        "description": "",
+        "backgroundImage": ""
+      }
+    ],
+    "ongoingProjects": [
+      {
+        "title": "Parallel Computing for GANs",
+        "description": "Implementing a Generative Adversarial Network (GAN) using parallel computing techniques to accelerate training, manage larger datasets, and enhance output quality. The project utilizes CUDA for GPU programming and PyTorch for GAN development, requiring access to the Institute's GPU cluster for testing and validation."
+      }
+    ],
+    "members": [
+      {
+        "photo": "",
+        "name": "Ayush Gupta",
+        "club": "Computer Architecture",
+        "role": "Domain Head",
+        "socials": {
+          "instagram": "_.ayushhh.__._",
+          "github": "ayushhwho",
+          "linkedin": "ayush-gupta-168300283",
+          "email": "ee22b005@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Suriyaa MM",
+        "club": "Computer Architecture",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "mms_2705",
+          "github": "SuriyaaMM",
+          "linkedin": "Suriyaa MM",
+          "email": "ee23b054@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "P Dharani",
+        "club": "Computer Architecture",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "dharani_parvatham",
+          "github": "Srihanu1999",
+          "linkedin": "Dharani P",
+          "email": "ee23b069@iittp.ac.in"
+        }
+      }
+    ]
+  },
+  "competitive-programming": {
+    "domainLogo": "/images/domainLogos/CP_Negative.png",
+    "domainName": "Competitive Programming",
+    "domainDescription": "",
+    "events": [
+      {
+        "name": "",
+        "date": "",
+        "description": "",
+        "backgroundImage": ""
+      }
+    ],
+    "members": [
+      {
+        "photo": "",
+        "name": "Ashish Raj",
+        "club": "Competitive Programming",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "",
+          "github": "Ashishraj003",
+          "linkedin": "ashish-raj-4585a6329",
+          "email": "cs22b055@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "B.N.A.B. Sai Krishna",
+        "club": "Competitive Programming",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "",
+          "github": "krishnabrahmajosyula",
+          "linkedin": "Sai Krishna Brahmajosyula",
+          "email": "cs23b057@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Trilok S",
+        "club": "Competitive Programming",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "",
+          "github": "",
+          "linkedin": "trilok-shetty-353641287",
+          "email": "me23b049@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Sayan Kundu",
+        "club": "Competitive Programming",
+        "role": "Lead(s)",
+        "socials": {
+          "instagram": "_sxyxn.__",
+          "github": "electro-coder",
+          "linkedin": "sayan-kundu-672b77257",
+          "email": "ee22b060@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Atharv Nagar",
+        "club": "Competitive Programming",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "_athaxr",
+          "github": "Atharvnagar007",
+          "linkedin": "atharv-nagar",
+          "email": "me22b006@iittp.ac.in"
+        }
+      }
+    ]
+  },
+  "cyber-security": {
+    "domainLogo": "/images/domainLogos/Cyber_Negative.png",
+    "domainName": "Cyber Security",
+    "domainDescription": "",
+    "events": [
+      {
+        "name": "",
+        "date": "",
+        "description": "",
+        "backgroundImage": ""
+      }
+    ],
+    "ongoingProjects": [
+      {
+        "title": "Building Our Own Firewall",
+        "description": "Developing a custom firewall for Windows using driver development techniques, with potential implementation for our college network."
+      },
+      {
+        "title": "Website Phishing Detection Model",
+        "description": "Creating a model to identify malicious websites by analyzing web links for phishing characteristics."
+      }
+    ],
+    "members": [
+      {
+        "photo": "",
+        "name": "Anirudh Arrepu",
+        "club": "Cyber Security",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "anirudharrepu",
+          "github": "AnirudhArrepu",
+          "linkedin": "AnirudhArrepu",
+          "email": "cs23b008@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "M V Sonith",
+        "club": "Cyber Security",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "",
+          "github": "sonith17",
+          "linkedin": "sonith-m-v-0a7a4b256",
+          "email": "cs22b036@iittp.ac.in"
+        }
+      }
+    ]
+  },
+  "software-engineering": {
+    "domainLogo": "/images/domainLogos/DevOps_Negative.png",
+    "domainName": "Software Engineering",
+    "domainDescription": "The Software Engineering domain at Digital Wizards is dedicated to cultivating technical excellence through innovative projects and skill-building initiatives throughout the year. We strive to equip students with practical knowledge and collaborative experience to thrive in the world of software development by conducting various workshops and sessions.",
+    "events": [
+      {
+        "name": "",
+        "date": "",
+        "description": "",
+        "backgroundImage": ""
+      }
+    ],
+    "ongoingProjects": [
+      {
+        "title": "SkillSync",
+        "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions."
+      },
+      {
+        "title": "Advanced To-Do App",
+        "description": "A task management app offering personal task tracking, group project discussion tools, and assignment deadline tracking."
+      }
+    ],
+    "members": [
+      {
+        "photo": "",
+        "name": "Tanguturi Mokshith Reddy",
+        "club": "Software Engineering",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "mokshith3286",
+          "github": "Mokshith1708",
+          "linkedin": "mokshithreddytanguturi",
+          "email": "cs22b046@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Viramgama Jaimin",
+        "club": "Software Engineering",
+        "role": "Domain Head",
+        "socials": {
+          "instagram": "jaimin.v_22",
+          "github": "i-apex",
+          "linkedin": "jaiminv",
+          "email": "cs22b051@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Aniket Johri",
+        "club": "Software Engineering",
+        "role": "Lead(s)",
+        "socials": {
+          "instagram": "aniket.johri",
+          "github": "Error-404-NotFound",
+          "linkedin": "aniket-johri-082a83257",
+          "email": "cs22b028@iittp.ac.in"
+        }
+      }
+    ]
+  },
+  "web-development": {
+    "domainLogo": "/images/domainLogos/WebDevLogo.png",
+    "domainName": "Web Development",
+    "domainDescription": "",
+    "events": [
+      {
+        "name": "",
+        "date": "",
+        "description": "",
+        "backgroundImage": ""
+      }
+    ],
+    "ongoingProjects": [
+      {
+        "title": "Digital Wizards Website",
+        "description": "A comprehensive website featuring an overview, events, team profiles, resources, blogs, alumni highlights, and an admin dashboard for efficient content and member management."
+      },
+      {
+        "title": "SkillSync",
+        "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions."
+      }
+    ],
+    "members": [
+      {
+        "photo": "",
+        "name": "Sasaank Janapati",
+        "club": "Web Development",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "sasaank2401",
+          "github": "SasaankJanapati",
+          "linkedin": "Sasaank Janapati",
+          "email": "cs22b059@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "",
+        "name": "Arth Patel",
+        "club": "Web Development",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "xe.arth",
+          "github": "ArthPatel02",
+          "linkedin": "arthpatel02",
+          "email": "ce22b008@iittp.ac.in"
+        }
+      }
+    ]
   }
-  
+}
