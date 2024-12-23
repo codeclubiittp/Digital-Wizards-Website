@@ -25,7 +25,7 @@ export const ClubMemberCard = ({ member }) => {
         {/* Social Icons */}
         <div className="mt-4 flex space-x-4">
           <a
-            href={member.socials.instagram}
+            href={`https://www.instagram.com/${member.socials.instagram}`}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform transform hover:scale-125 duration-300 hover:text-pink-500"
@@ -33,7 +33,7 @@ export const ClubMemberCard = ({ member }) => {
             <FaInstagram size={24} />
           </a>
           <a
-            href={member.socials.github}
+            href={`https://github.com/${member.socials.github}`}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform transform hover:scale-125 duration-300 hover:text-gray-400"
@@ -41,7 +41,7 @@ export const ClubMemberCard = ({ member }) => {
             <FaGithub size={24} />
           </a>
           <a
-            href={member.socials.linkedin}
+            href={`https://www.linkedin.com/in/${member.socials.linkedin}`}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform transform hover:scale-125 duration-300 hover:text-blue-500"

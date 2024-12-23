@@ -10,13 +10,19 @@ import LandingPage from '../components/LandingPage.jsx';
 import DomainCards from '../components/Domains.jsx';
 import FallingMatrix from '../components/FallingMatrix.jsx';
 import ClubMember from '../components/ClubMember.jsx';
-function HomePage() {
+import { Leads } from '../components/Leads.jsx';
+import ContactUs from '../components/ContactUs.jsx';
+
+function HomePage() {  
   return (
     <div>
       <FallingMatrix />
       <Navbar/>
       <LandingPage />
       <DomainCards />
+      <Leads />
+      <ContactUs />
+
       {/* <Hero /> */}
       {/* <Link to="/about">Go to About Page</Link> */}
 

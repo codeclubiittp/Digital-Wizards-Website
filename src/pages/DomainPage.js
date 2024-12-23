@@ -62,11 +62,20 @@ const DomainPage = () => {
 
       {/* Domain Logo and Name Section */}
       <div className="flex flex-col sm:flex-row justify-center items-center py-8 sm:py-10 mt-6 sm:mt-10 text-center sm:text-left">
-        <img
+        {/* <img
           src={domainLogo}
           alt={`${domainName} Logo`}
           className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-neon-green shadow-neon mb-4 sm:mb-0"
-        />
+        /> */}
+        <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 overflow-hidden rounded-full border-4 border-neon-green shadow-neon mb-4 sm:mb-0">
+          <img
+            src={domainLogo}
+            alt={`${domainName} Logo`}
+            className="w-full h-full object-cover object-top scale-125 md:translate-y-4 translate-y-2"
+          />
+        </div>
+
+
         <div className="flex flex-col items-center sm:items-start ">
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white">
             {domainName}
@@ -149,7 +158,8 @@ const DomainPage = () => {
               <div
                 className="absolute inset-0 rounded-lg bg-cover bg-center"
                 style={{
-                  backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/5e6542d2ae16460bb741a9eb/1603318636443-A846ACUKNYUBA0RPLJ94/marvin-meyer-SYTO3xs06fU-unsplash.jpg")`,
+                  // backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/5e6542d2ae16460bb741a9eb/1603318636443-A846ACUKNYUBA0RPLJ94/marvin-meyer-SYTO3xs06fU-unsplash.jpg")`,
+                  backgroundImage: `url(${project.backgroundImage})`,
                   clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)',
                   opacity: 0.7,
                 }}
