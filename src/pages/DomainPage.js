@@ -160,7 +160,7 @@ const DomainPage = () => {
                 style={{
                   // backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/5e6542d2ae16460bb741a9eb/1603318636443-A846ACUKNYUBA0RPLJ94/marvin-meyer-SYTO3xs06fU-unsplash.jpg")`,
                   backgroundImage: `url(${project.backgroundImage})`,
-                  clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)',
+                  clipPath: 'polygon(10% 0%, 100% 0%, 100% 100%, 50% 100%)',
                   opacity: 0.7,
                 }}
               ></div>
