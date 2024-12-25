@@ -29,7 +29,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-gray-400 cursor-pointer">
+              <Link to="/#domains" className="hover:text-gray-400 cursor-pointer">
                 Domains
               </Link>
             </li>

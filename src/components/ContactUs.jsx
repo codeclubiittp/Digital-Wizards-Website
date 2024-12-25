@@ -14,6 +14,7 @@ const ContactUs = () => {
                         <thead>
                             <tr className="bg-gray-800">
                                 <th className="border border-gray-700 px-4 py-2 text-left">Name</th>
+                                <th className="border border-gray-700 px-4 py-2 text-left">Role</th>
                                 <th className="border border-gray-700 px-4 py-2 text-left">Email-ID</th>
                                 <th className="border border-gray-700 px-4 py-2 text-left">GitHub</th>
                                 <th className="border border-gray-700 px-4 py-2 text-left">Instagram</th>
@@ -41,6 +42,7 @@ const ContactUs = () => {
                                             } hover:bg-teal-800`}
                                         >
                                             <td className="border border-gray-700 px-4 py-2">{member.name}</td>
+                                            <td className="border border-gray-700 px-4 py-2 font-bold">{member.role}</td>
                                             <td className="border border-gray-700 px-4 py-2">{member.socials.email}</td>
                                             <td className="border border-gray-700 px-4 py-2">
                                                 <a

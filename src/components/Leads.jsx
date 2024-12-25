@@ -29,7 +29,7 @@ export const Leads = () => {
       <div className="w-24 mx-auto border-t-4 border-white mb-8"></div>
 
       {/* All Leads Cards */}
-      <div className="flex flex-wrap justify-center gap-12 mt-8">
+      <div className="mx-3 md:mx-0 flex flex-wrap justify-center gap-12 mt-8">
         {allLeads.map((lead, index) => (
           <div
             key={index}
