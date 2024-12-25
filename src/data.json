@@ -27,12 +27,13 @@
       {
         "title": "IIT Tirupati Utility App",
         "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features.",
+        "backgroundImage": "/images/domains/AppDev/Projects/IIT Tirupati Utility App/project.jpeg",        
         "githubLink": "https://github.com/codeclubiittp/Digital-Wizards-Website"
       }
     ],
     "members": [
       {
-        "photo": "/images/members/ChitrakshVasantati.jpg",
+        "photo": "/images/domains/appDev/members/ChitrakshVasantati.jpg",
         "name": "Chitraksh Vasantati",
         "club": "App Development",
         "role": "Domain Head",
@@ -44,7 +45,7 @@
         }
       },
       {
-        "photo": "/images/members/AnirudhArrepu.jpeg",
+        "photo": "/images/domains/appDev/members/AnirudhArrepu.jpeg",
         "name": "Anirudh Arrepu",
         "club": "App Development",
         "role": "Core Member",
@@ -56,7 +57,7 @@
         }
       },
       {
-        "photo": "/images/members/NiranjanM.jpg",
+        "photo": "/images/domains/appDev/members/NiranjanM.jpg",
         "name": "Niranjan M",
         "club": "App Development",
         "role": "Core Member",
@@ -89,7 +90,7 @@
     ],
     "members": [
       {
-        "photo": "/images/members/AyushGupta.jpg",
+        "photo": "/images/domains/arch/members/AyushGupta.jpg",
         "name": "Ayush Gupta",
         "club": "Computer Architecture",
         "role": "Domain Head",
@@ -101,7 +102,7 @@
         }
       },
       {
-        "photo": "/images/members/SuriyaaMM.jpg",
+        "photo": "/images/domains/arch/members/SuriyaaMM.jpg",
         "name": "Suriyaa MM",
         "club": "Computer Architecture",
         "role": "Core Member",
@@ -113,7 +114,7 @@
         }
       },
       {
-        "photo": "/images/members/PDharani.jpg",
+        "photo": "/images/domains/arch/members/PDharani.jpg",
         "name": "P Dharani",
         "club": "Computer Architecture",
         "role": "Core Member",
@@ -152,7 +153,7 @@
     ],
     "members": [
       {
-        "photo": "/images/members/Sudhanva.jpg",
+        "photo": "/images/domains/cp/members/Sudhanva.jpg",
         "name": "Sudhanva Bharadwaj BM",
         "club": "Competitive Programming",
         "role": "Domain Head",
@@ -164,7 +165,7 @@
         }
       },
       {
-        "photo": "/images/members/Ashish.jpg",
+        "photo": "/images/domains/cp/members/Ashish.jpg",
         "name": "Ashish Raj",
         "club": "Competitive Programming",
         "role": "Core Member",
@@ -176,7 +177,7 @@
         }
       },
       {
-        "photo": "/images/members/B.N.A.B.SaiKrishna.jpg",
+        "photo": "/images/domains/cp/members/B.N.A.B.SaiKrishna.jpg",
         "name": "B.N.A.B. Sai Krishna",
         "club": "Competitive Programming",
         "role": "Core Member",
@@ -188,7 +189,7 @@
         }
       },
       {
-        "photo": "/images/members/TrilokS.jpg",
+        "photo": "/images/domains/cp/members/TrilokS.jpg",
         "name": "Trilok S",
         "club": "Competitive Programming",
         "role": "Core Member",
@@ -200,7 +201,7 @@
         }
       },
       {
-        "photo": "/images/members/SayanKundu.jpg",
+        "photo": "/images/domains/cp/members/SayanKundu.jpg",
         "name": "Sayan Kundu",
         "club": "Competitive Programming",
         "role": "Lead(s)",
@@ -212,7 +213,7 @@
         }
       },
       {
-        "photo": "/images/members/AtharvNagar.jpeg",
+        "photo": "/images/domains/cp/members/AtharvNagar.jpeg",
         "name": "Atharv Nagar",
         "club": "Competitive Programming",
         "role": "Core Member",
@@ -249,7 +250,7 @@
     ],
     "members": [
       {
-        "photo": "/images/members/S.Tharun.jpeg",
+        "photo": "/images/domains/cyberSec/members/S.Tharun.jpeg",
         "name": "S.Tharun",
         "club": "Cyber Security",
         "role": "Domain Head",
@@ -261,7 +262,7 @@
         }
       },
       {
-        "photo": "/images/members/AnirudhArrepu.jpeg",
+        "photo": "/images/domains/cyberSec/members/AnirudhArrepu.jpeg",
         "name": "Anirudh Arrepu",
         "club": "Cyber Security",
         "role": "Core Member",
@@ -273,7 +274,7 @@
         }
       },
       {
-        "photo": "/images/members/MVSonith.jpg",
+        "photo": "/images/domains/cyberSec/members/MVSonith.jpg",
         "name": "M V Sonith",
         "club": "Cyber Security",
         "role": "Core Member",
@@ -310,7 +311,7 @@
     ],
     "members": [
       {
-        "photo": "/images/members/ViramgamaJaimin.jpg",
+        "photo": "/images/domains/se/members/ViramgamaJaimin.jpg",
         "name": "Viramgama Jaimin",
         "club": "Software Engineering",
         "role": "Domain Head",
@@ -322,7 +323,7 @@
         }
       },
       {
-        "photo": "/images/members/TanguturiMokshithReddy.jpg",
+        "photo": "/images/domains/se/members/TanguturiMokshithReddy.jpg",
         "name": "Tanguturi Mokshith Reddy",
         "club": "Software Engineering",
         "role": "Core Member",
@@ -334,7 +335,7 @@
         }
       },
       {
-        "photo": "/images/members/AniketJohri.jpg",
+        "photo": "/images/domains/se/members/AniketJohri.jpg",
         "name": "Aniket Johri",
         "club": "Software Engineering",
         "role": "Lead(s)",
@@ -373,7 +374,7 @@
     ],
     "members": [
       {
-        "photo": "/images/members/Akilesh.jpeg",
+        "photo": "/images/domains/webDev/members/Akilesh.jpeg",
         "name": "P Akilesh",
         "club": "Web Development",
         "role": "Domain Head",
@@ -385,7 +386,7 @@
         }
       },
       {
-        "photo": "/images/members/SasaankJanapati.jpg",
+        "photo": "/images/domains/webDev/members/SasaankJanapati.jpg",
         "name": "Sasaank Janapati",
         "club": "Web Development",
         "role": "Core Member",
@@ -397,7 +398,7 @@
         }
       },
       {
-        "photo": "/images/members/ArthPatel.jpg",
+        "photo": "/images/domains/webDev/members/ArthPatel.jpg",
         "name": "Arth Patel",
         "club": "Web Development",
         "role": "Core Member",
@@ -409,7 +410,7 @@
         }
       },
       {
-        "photo": "/images/members/AmitJomy.jpg",
+        "photo": "/images/domains/webDev/members/AmitJomy.jpg",
         "name": "Amit Jomy",
         "club": "Web Development",
         "role": "Core Member",
