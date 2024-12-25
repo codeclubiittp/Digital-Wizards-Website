@@ -21,7 +21,7 @@ function HomePage() {
       <Navbar/>
       <LandingPage />
       <DomainCards/>
-      {/* <Events /> */}
+      <Events />
       <ProjectsGrid />
       <Leads />
 

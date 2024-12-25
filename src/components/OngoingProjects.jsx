@@ -7,7 +7,7 @@ const ProjectsGrid = () => {
     .flatMap(domain => domain.ongoingProjects || []); // Fallback to empty array if ongoingProjects is missing
 
   return (
-    <section>
+    <section className='mt-12'>
       {/* Leads Section Heading */}
       <p className="sm:text-[3rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
         Ongoing Projects
