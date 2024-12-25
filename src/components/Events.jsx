@@ -1,14 +1,17 @@
-import React from "react";
+import React,{ useState } from "react";
 import data from "../data.json"; // Adjust the path as needed
 
-const events = Object.values(data).flatMap((domain) => domain.events || []); // Fallback to empty array if events is missing
+// const events = Object.values(data).flatMap((domain) => domain.events || []); // Fallback to empty array if events is missing
+const events = Object.values(data)
+  .flatMap((domain) => domain.events || [])
+  .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort in descending order
 
 const Events = () => {
   return (
     <section className="mt-12">
       {/* Events Section Heading */}
       <p className="sm:text-[3rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
-        Events
+        Events & Sessions
       </p>
 
       {/* Line under the heading */}

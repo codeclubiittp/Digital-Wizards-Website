@@ -5,9 +5,13 @@ const ContactUs = () => {
     return (
         <section>
             {/* Section Heading */}
-            <p className="sm:text-[3rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
+            <p className="sm:text-[2rem] md:text-[3rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-1 mt-4">
                 Contact Us
             </p>
+
+            {/* Line under the heading */}
+            <div className="w-16 mx-auto border-t-4 border-white mb-4"></div>
+
             <div className="min-h-screen text-white flex items-center justify-center p-4">
                 <div className="overflow-x-auto w-full max-w-5xl">
                     <table className="table-auto w-full border-collapse border border-gray-700">

@@ -94,10 +94,21 @@ function Footer() {
       </div>
 
       {/* Bottom Section - Copyright (always at the bottom) */}
-      <div className="w-full bg-black text-center py-4 mt-6">
+      {/* <div className="w-full bg-black text-center py-4 mt-6">
         <p className="text-sm sm:text-base">&copy; Copyright. All rights reserved.</p>
         <p className="text-sm sm:text-base">Made with 💙 by Team Web Development DW.</p>
+      </div> */}
+      <div className="w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center py-6 mt-8">
+        <p className="text-sm sm:text-base text-gray-400">
+          &copy; {new Date().getFullYear()} Digital Wizards. All rights reserved.
+        </p>
+        <p className="text-sm sm:text-base text-gray-400 mt-2">
+          Crafted with <span className="text-neon-blue">💙</span> by 
+          <span className="font-semibold text-white"> Team Web Development</span> of 
+          <span className="font-semibold text-neon-blue"> Digital Wizards</span>.
+        </p>
       </div>
+
     </footer>
   );
 }

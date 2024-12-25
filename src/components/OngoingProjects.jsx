@@ -100,12 +100,40 @@ const ProjectsGrid = () => {
                     className="ml-2 w-4 lg:w-5 h-4 lg:h-5"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 20 20 20"
+                    viewBox="0 0 20 20"
                   >
                     <path d="M12.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L15.586 10H3a1 1 0 110-2h12.586l-3.293-3.293a1 1 0 010-1.414z" />
                   </svg>
                 </button>
               )}
+
+              
+              {/* Progress Bar */}
+              <div className="relative w-full mt-4">
+                {/* Wrapper for Progress Bar */}
+                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden group">
+                  {/* Progress fill */}
+                  <div
+                    className="h-full bg-gradient-to-r from-green-400 to-green-500"
+                    style={{
+                      width: `${project.progress || 60}%`,
+                    }}
+                  ></div>
+
+                  {/* Percentage inside bar on hover */}
+                  <span
+                    className="absolute inset-0 flex items-center justify-center text-xs text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  >
+                    {`${project.progress || 60}%`}
+                  </span>
+                </div>
+
+                {/* Percentage beside the bar */}
+                <span className="ml-2 text-sm text-white">
+                  {`${project.progress || 60}%`}
+                </span>
+              </div>
+
             </div>
           </div>
         ))}

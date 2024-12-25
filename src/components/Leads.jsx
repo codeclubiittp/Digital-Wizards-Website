@@ -21,8 +21,8 @@ export const Leads = () => {
   return (
     <section>
       {/* Leads Section Heading */}
-      <p className="mt-5 sm:text-[3rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
-        Lead
+      <p className="mt-5 sm:text-[2rem] md:text-[3rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
+        2024 - 2025<br/> Lead
       </p>
 
       {/* Line under the heading */}
