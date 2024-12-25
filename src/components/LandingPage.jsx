@@ -1,6 +1,13 @@
-import React from 'react';
+import React,{useRef} from 'react';
 
 const LandingPage = () => {
+  const aboutMeRef = useRef(null);
+
+  const handleScroll = () => {
+    aboutMeRef.current.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
   return (
     <div
       className="h-screen bg-cover bg-center flex justify-center items-center"
@@ -22,15 +29,22 @@ const LandingPage = () => {
         </p>
 
         {/* Explore Button */}
-        <a
-          href="#about-me"
-          className="mt-6 inline-block text-black bg-white rounded-full 
-            py-2 px-6 sm:py-3 sm:px-8 md:py-4 md:px-10 lg:py-4 lg:px-12 
-            text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[1.5rem] 
-            hover:bg-gray-700 hover:text-white transition duration-300"
-        >
-          Explore
-        </a>
+
+        <div>
+          {/* Button with onClick handler */}
+          <button
+            onClick={handleScroll}
+            className="mt-6 inline-block text-black bg-white rounded-full 
+              py-2 px-6 sm:py-3 sm:px-8 md:py-4 md:px-10 lg:py-4 lg:px-12 
+              text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[1.5rem] 
+              hover:bg-gray-700 hover:text-white transition duration-300"
+          >
+            Explore
+          </button>
+
+          {/* The section to scroll to */}
+          <div ref={aboutMeRef} id="about-me" className="about-section"/>
+        </div>
       </div>
     </div>
   );

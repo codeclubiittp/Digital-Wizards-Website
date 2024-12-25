@@ -14,7 +14,8 @@
     "ongoingProjects": [
       {
         "title": "IIT Tirupati Utility App",
-        "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features."
+        "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features.",
+        "githubLink": "https://github.com/codeclubiittp/Digital-Wizards-Website"
       }
     ],
     "members": [
@@ -127,6 +128,18 @@
     ],
     "members": [
       {
+        "photo": "/images/members/Sudhanva.jpg",
+        "name": "Sudhanva Bharadwaj BM",
+        "club": "Competitive Programming",
+        "role": "Domain Head",
+        "socials": {
+          "instagram": "",
+          "github": "bmsvinci1729",
+          "linkedin": "sudhanva321",
+          "email": "cs23b051@iittp.ac.in"
+        }
+      },
+      {
         "photo": "/images/members/Ashish.jpg",
         "name": "Ashish Raj",
         "club": "Competitive Programming",
@@ -212,6 +225,18 @@
     ],
     "members": [
       {
+        "photo": "/images/members/S.Tharun.jpeg",
+        "name": "S.Tharun",
+        "club": "Cyber Security",
+        "role": "Domain Head",
+        "socials": {
+          "instagram": "",
+          "github": "Tharun1236",
+          "linkedin": "tharun-shivashankar-8a29ab26b",
+          "email": "ee22b040@iittp.ac.in"
+        }
+      },
+      {
         "photo": "/images/members/AnirudhArrepu.jpeg",
         "name": "Anirudh Arrepu",
         "club": "Cyber Security",
@@ -261,18 +286,6 @@
     ],
     "members": [
       {
-        "photo": "/images/members/TanguturiMokshithReddy.jpg",
-        "name": "Tanguturi Mokshith Reddy",
-        "club": "Software Engineering",
-        "role": "Core Member",
-        "socials": {
-          "instagram": "mokshith3286",
-          "github": "Mokshith1708",
-          "linkedin": "mokshithreddytanguturi",
-          "email": "cs22b046@iittp.ac.in"
-        }
-      },
-      {
         "photo": "/images/members/ViramgamaJaimin.jpg",
         "name": "Viramgama Jaimin",
         "club": "Software Engineering",
@@ -282,6 +295,18 @@
           "github": "i-apex",
           "linkedin": "jaiminv",
           "email": "cs22b051@iittp.ac.in"
+        }
+      },
+      {
+        "photo": "/images/members/TanguturiMokshithReddy.jpg",
+        "name": "Tanguturi Mokshith Reddy",
+        "club": "Software Engineering",
+        "role": "Core Member",
+        "socials": {
+          "instagram": "mokshith3286",
+          "github": "Mokshith1708",
+          "linkedin": "mokshithreddytanguturi",
+          "email": "cs22b046@iittp.ac.in"
         }
       },
       {
@@ -314,7 +339,8 @@
       {
         "title": "Digital Wizards Website",
         "description": "A comprehensive website featuring an overview, events, team profiles, resources, blogs, alumni highlights, and an admin dashboard for efficient content and member management.",
-        "backgroundImage": "/images/domains/WebDev/Projects/DWWebsite/img2.png"
+        "backgroundImage": "/images/domains/WebDev/Projects/DWWebsite/img2.png",
+        "githubLink": "https://github.com/codeclubiittp/Digital-Wizards-Website"
       },
       {
         "title": "SkillSync",
@@ -364,10 +390,10 @@
         "club": "Web Development",
         "role": "Core Member",
         "socials": {
-          "instagram": "xe.arth",
-          "github": "ArthPatel02",
-          "linkedin": "arthpatel02",
-          "email": "ce22b008@iittp.ac.in"
+          "instagram": "amit_jomy",
+          "github": "amitjomy007",
+          "linkedin": "amitjomy",
+          "email": "me23b003@iittp.ac.in"
         }
       }
     ]

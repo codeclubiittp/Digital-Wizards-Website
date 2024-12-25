@@ -24,37 +24,49 @@ export const ClubMemberCard = ({ member }) => {
 
         {/* Social Icons */}
         <div className="mt-4 flex space-x-4">
-          <a
-            href={`https://www.instagram.com/${member.socials.instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-transform transform hover:scale-125 duration-300 hover:text-pink-500"
-          >
-            <FaInstagram size={24} />
-          </a>
-          <a
-            href={`https://github.com/${member.socials.github}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-transform transform hover:scale-125 duration-300 hover:text-gray-400"
-          >
-            <FaGithub size={24} />
-          </a>
-          <a
-            href={`https://www.linkedin.com/in/${member.socials.linkedin}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-transform transform hover:scale-125 duration-300 hover:text-blue-500"
-          >
-            <FaLinkedin size={24} />
-          </a>
-          <a
-            href={`mailto:${member.socials.email}`}
-            className="transition-transform transform hover:scale-125 duration-300 hover:text-red-500"
-          >
-            <FaEnvelope size={24} />
-          </a>
+          {member.socials.instagram && (
+            <a
+              href={`https://www.instagram.com/${member.socials.instagram}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform transform hover:scale-125 duration-300 hover:text-pink-500"
+            >
+              <FaInstagram size={24} />
+            </a>
+          )}
+          
+          {member.socials.github && (
+            <a
+              href={`https://github.com/${member.socials.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform transform hover:scale-125 duration-300 hover:text-gray-400"
+            >
+              <FaGithub size={24} />
+            </a>
+          )}
+
+          {member.socials.linkedin && (
+            <a
+              href={`https://www.linkedin.com/in/${member.socials.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform transform hover:scale-125 duration-300 hover:text-blue-500"
+            >
+              <FaLinkedin size={24} />
+            </a>
+          )}
+
+          {member.socials.email && (
+            <a
+              href={`mailto:${member.socials.email}`}
+              className="transition-transform transform hover:scale-125 duration-300 hover:text-red-500"
+            >
+              <FaEnvelope size={24} />
+            </a>
+          )}
         </div>
+
       </div>
 
       {/* Glow Effect */}
