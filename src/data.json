@@ -8,7 +8,7 @@
         "name": "Git, Docker and Firebase",
         "date": "2024-08-17",
         "description": "Conducted an interesting session on Git, Docker, and Firebase.",
-        "backgroundImage": ""
+        "backgroundImage": "/images/domains/AppDev/events/Git, Docker and Firebase/img1.jpg"
       },
       {
         "name": "React Native X Firebase",
@@ -20,7 +20,7 @@
         "name": "Flutter X Firebase",
         "date": "2024-10-24",
         "description": "Our team conducted an interactive hands-on development session with Flutter.",
-        "backgroundImage": ""
+        "backgroundImage": "/images/domains/AppDev/events/Flutter X Firebase/img1.jpg"
       }
     ],
     "ongoingProjects": [
@@ -146,7 +146,7 @@
         "name": "DSA Workshop Series - Lecture 1: Arrays",
         "date": "2024-10-26",
         "description": "The first session of the DSA Lecture Series focused on Arrays and Strings, covering concepts and hands-on coding. Problem-solving approaches apart from brute-force were discussed in detail. Topics covered included: Arrays (Bit manipulation, Maps, Kadane's Algorithm, and Sliding Window) and Strings.",
-        "backgroundImage": ""
+        "backgroundImage": "/images/domains/cp/events/DSA Workshop Series - Lecture 1 Arrays/img1.jpg"
       },
       {
         "name": "Tachyon CP Contest",
