@@ -79,7 +79,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/company/digital-wizards-iitt"
+                href="https://discord.gg/XmMxm6qd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-500 transition duration-300"
