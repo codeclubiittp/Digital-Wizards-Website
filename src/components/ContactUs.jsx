@@ -31,7 +31,7 @@ const ContactUs = () => {
                                     {/* Domain Row */}
                                     <tr>
                                         <td
-                                            colSpan="4"
+                                            colSpan="5"
                                             className="bg-gray-900 text-center text-lg font-bold text-yellow-400 py-3"
                                         >
                                             {domainKey}
