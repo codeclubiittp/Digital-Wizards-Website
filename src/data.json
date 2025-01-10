@@ -55,7 +55,7 @@
         {
           "title": "IIT Tirupati Utility App",
           "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features.",
-          "backgroundImage": "/images/domains/AppDev/Projects/IIT Tirupati Utility App/project.jpeg",        
+          "backgroundImage": "/images/domains/AppDev/Projects/IIT Tirupati Utility App/project.jpeg",
           "githubLink": "https://github.com/codeclubiittp/",
           "progress": "10"
         }
@@ -179,8 +179,8 @@
         {
           "name": "Tachyon CP Contest",
           "date": "2024-11-16",
-          "description": "As a part of the Tachyon Fest, DW organized a CP contest with a prize pool of ₹10,000. Topics dealt with included: Arrays (2 Pointers and Sieve of Eratosthenes), Bit Manipulation, and Implementation Problems.",
-          "backgroundImage": ""
+          "description": "As a part of the Tachyon Fest, DW organized a CP contest with a prize pool of ₹10,000. Topics dealt with included: Arrays (2 Pointers and Sieve of Eratosthenes), Bit Manipulation, and Implementation Problems.", 
+          "backgroundImage": "/images/domains/cp/events/Tachyon CP Contest/img.png"
         }
       ],
       "members": [
@@ -206,6 +206,18 @@
             "github": "Ashishraj003",
             "linkedin": "ashish-raj-4585a6329",
             "email": "cs22b055@iittp.ac.in"
+          }
+        },
+        {
+          "photo": "/images/domains/cp/members/Anuj Sharma.jpg",
+          "name": "Anuj Sharma",
+          "club": "Competitive Programming",
+          "role": "Core Member",
+          "socials": {
+            "instagram": "@the_winner_as",
+            "github": "The0winner0",
+            "linkedin": "anuj-sharma-76448726b",
+            "email": "cs22b007@iittp.ac.in"
           }
         },
         {
@@ -281,7 +293,7 @@
         {
           "title": "Website Phishing Detection Model",
           "description": "Creating a model to identify malicious websites by analyzing web links for phishing characteristics.",
-          "backgroundImage": "",        
+          "backgroundImage": "/images/domains/cyberSec/projects/Website Phishing Detection Model/project.jpeg",        
           "githubLink": "https://github.com/codeclubiittp/",
           "progress": "50"
         }
@@ -341,14 +353,14 @@
         {
           "title": "SkillSync",
           "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions.",
-          "backgroundImage": "public/images/domains/se/projects/SkillSync/project.jpeg",        
+          "backgroundImage": "/images/domains/se/projects/SkillSync/project.jpeg",        
           "githubLink": "https://github.com/codeclubiittp/",
           "progress": "0"
         },
         {
           "title": "Advanced To-Do App",
           "description": "A task management app offering personal task tracking, group project discussion tools, and assignment deadline tracking.",
-          "backgroundImage": "",        
+          "backgroundImage": "/images/domains/se/projects/Advanced To-Do App/project.jpg",        
           "githubLink": "https://github.com/codeclubiittp/",
           "progress": "80"
         }
@@ -427,7 +439,7 @@
         {
           "title": "SkillSync",
           "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions.",
-          "backgroundImage": "public/images/domains/webDev/projects/SkillSync/project.jpeg",        
+          "backgroundImage": "/images/domains/webDev/projects/SkillSync/project.jpeg",        
           "githubLink": "https://github.com/codeclubiittp/",
           "progress": "0"
         }
@@ -479,6 +491,51 @@
             "github": "amitjomy007",
             "linkedin": "amitjomy",
             "email": "me23b003@iittp.ac.in"
+          }
+        }
+      ]
+    },
+    "social-media":{
+      "domainLogo": "",
+      "domainName": "Social Media",
+      "domainDescription": "",
+      "events": [],
+      "ongoingProjects": [],
+      "members": [
+        {
+          "photo": "/images/domains/socialMedia/members/Snehitha.jpeg",
+          "name": "P Snehitha",
+          "club": "Social Media",
+          "role": "Domain Head",
+          "socials": {
+            "instagram": "snehitha13_12",
+            "github": "Snehitha1312",
+            "linkedin": "p-snehitha-608766266",
+            "email": "cs22b041@iittp.ac.in"
+          }
+        },
+        {
+          "photo": "/images/domains/socialMedia/members/ViramgamaJaimin.jpg",
+          "name": "Viramgama Jaimin",
+          "club": "Software Engineering",
+          "role": "Core Member",
+          "socials": {
+            "instagram": "jaimin.v_22",
+            "github": "i-apex",
+            "linkedin": "jaiminv",
+            "email": "cs22b051@iittp.ac.in"
+          }
+        },
+        {
+          "photo": "/images/domains/socialMedia/members/Kidambi Venkata Srikrishna.jpg",
+          "name": "Kidambi Venkata Srikrishna",
+          "club": "Social Media",
+          "role": "Core Member",
+          "socials": {
+            "instagram": "",
+            "github": "SrikrishnaKidambi",
+            "linkedin": "venkata-srikrishna-kidambi-6b45bb287",
+            "email": "cs23b058@iittp.ac.in"
           }
         }
       ]

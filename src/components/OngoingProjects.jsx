@@ -3,8 +3,16 @@ import data from '../data.json'; // Adjust the path as needed
 
 const ProjectsGrid = () => {
   // Extract all ongoing projects from all domains
+  // const projects = Object.values(data.domains)
+  //   .flatMap(domain => domain.ongoingProjects || []); // Fallback to empty array if ongoingProjects is missing
+
+
   const projects = Object.values(data.domains)
-    .flatMap(domain => domain.ongoingProjects || []); // Fallback to empty array if ongoingProjects is missing
+  .flatMap(domain => domain.ongoingProjects || [])
+  .filter((project, index, self) => 
+    index === self.findIndex(p => p.title === project.title)
+  );
+
 
   return (
     <section className='mt-12'>
