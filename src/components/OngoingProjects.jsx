@@ -106,34 +106,6 @@ const ProjectsGrid = () => {
                   </svg>
                 </button>
               )}
-
-              
-              {/* Progress Bar */}
-              <div className="relative w-full mt-4">
-                {/* Wrapper for Progress Bar */}
-                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden group">
-                  {/* Progress fill */}
-                  <div
-                    className="h-full bg-gradient-to-r from-green-400 to-green-500"
-                    style={{
-                      width: `${project.progress || 60}%`,
-                    }}
-                  ></div>
-
-                  {/* Percentage inside bar on hover */}
-                  <span
-                    className="absolute inset-0 flex items-center justify-center text-xs text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  >
-                    {`${project.progress || 60}%`}
-                  </span>
-                </div>
-
-                {/* Percentage beside the bar */}
-                <span className="ml-2 text-sm text-white">
-                  {`${project.progress || 60}%`}
-                </span>
-              </div>
-
             </div>
           </div>
         ))}

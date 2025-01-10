@@ -117,7 +117,7 @@ const Navbar = () => {
         )}
       </div>
           <Link to="/contact" className="hover:text-gray-400 text-lg transition">
-            Contact
+            The Team
           </Link>
         </div>
       </div>
@@ -179,7 +179,7 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(false)}
             className="block text-lg hover:text-gray-400"
           >
-            Contact
+            The Team
           </Link>
         </div>
       </div>

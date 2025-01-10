@@ -18,7 +18,7 @@ const Events = () => {
       <div className="w-24 mx-auto border-t-4 border-white mb-8"></div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-        {events.map((event, index) => (
+        {events.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4).map((event, index) => (
           <div
             key={index}
             className="relative p-4 lg:p-6 bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg text-white transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl"
