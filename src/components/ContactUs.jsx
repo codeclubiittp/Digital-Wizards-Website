@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <section>
       {/* Section Heading */}
-      <p className="sm:text-[2rem] md:text-[3rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-1 mt-4">
+      <p className="text-[2rem] md:text-[3rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-1 mt-4">
         Contact Us
       </p>
 

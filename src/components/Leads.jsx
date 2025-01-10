@@ -33,7 +33,7 @@ export const Leads = () => {
   return (
     <section>
       {/* Leads Section Heading */}
-      <p className="mt-5 sm:text-[2rem] md:text-[3rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
+      <p className="mt-5 text-[2rem] md:text-[3rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
         2024 - 2025<br/> Lead
       </p>
 
@@ -106,7 +106,7 @@ export const Leads = () => {
       </div>
 
       {/* Domain Leads Section */}
-      <p className="sm:text-[2rem] md:text-[2.5rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mt-12 mb-3">
+      <p className="text-[2rem] md:text-[2.5rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mt-12 mb-3">
         Domain Leads
       </p>
 

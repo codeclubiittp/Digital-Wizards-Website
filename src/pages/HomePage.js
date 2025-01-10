@@ -14,7 +14,9 @@ function HomePage() {
       <FallingMatrix />
       <Navbar/>
       <LandingPage />
-      <DomainCards/>
+      <div id="domain-cards">
+        <DomainCards />
+      </div>
       <Events />
       <ProjectsGrid />
       <Leads />

@@ -10,7 +10,7 @@ const Events = () => {
   return (
     <section className="mt-12">
       {/* Events Section Heading */}
-      <p className="sm:text-[3rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
+      <p className="text-[2rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
         Events & Sessions
       </p>
 

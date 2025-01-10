@@ -38,7 +38,7 @@ const DomainCards = () => {
   return (
     <section className="p-6" id="domain-cards">
       {/* Section Heading */}
-      <p className="sm:text-[3rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
+      <p className="text-[2rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
         Domains in Digital Wizard
       </p>
 
