@@ -3,7 +3,7 @@ import data from '../data.json'; // Adjust the path as needed
 
 const ProjectsGrid = () => {
   // Extract all ongoing projects from all domains
-  const projects = Object.values(data)
+  const projects = Object.values(data.domains)
     .flatMap(domain => domain.ongoingProjects || []); // Fallback to empty array if ongoingProjects is missing
 
   return (
@@ -41,7 +41,7 @@ const ProjectsGrid = () => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute top-4 right-4 bg-black p-2 rounded-full transition duration-300 transform hover:scale-110 hover:bg-gray-800 z-20"
+                className="absolute top-4 right-4 bg-black p-2 rounded-full transition duration-300 transform hover:scale-110 hover:bg-gray-800 z-10"
               >
                 <svg
                   className="w-6 h-6 text-white"

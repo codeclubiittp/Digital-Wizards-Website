@@ -2,7 +2,7 @@ import React,{ useState } from "react";
 import data from "../data.json"; // Adjust the path as needed
 
 // const events = Object.values(data).flatMap((domain) => domain.events || []); // Fallback to empty array if events is missing
-const events = Object.values(data)
+const events = Object.values(data.domains)
   .flatMap((domain) => domain.events || [])
   .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort in descending order
 

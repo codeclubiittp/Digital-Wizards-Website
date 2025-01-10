@@ -34,8 +34,8 @@ const ContactUs = () => {
                 </th>
               </tr>
             </thead>
-            {Object.keys(data).map((domainKey) => {
-              const domain = data[domainKey];
+            {Object.keys(data.domains).map((domainKey) => {
+              const domain = data.domains[domainKey];
               return (
                 <tbody key={domainKey}>
                   {/* Domain Row */}

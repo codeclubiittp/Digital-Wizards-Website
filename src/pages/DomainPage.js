@@ -9,49 +9,9 @@ import data from '../data.json'
 
 const DomainPage = () => {
   const { domainId } = useParams();
-  
-//   const domainLogo = "/images/domainLogos/Cyber_Negative.png";
-//   const domainName = "Artificial Intelligence";
-//   const domainDescription = "Artificial Intelligence (AI) is a field of computer science focused on creating machines that can perform tasks that typically require human intelligence.";
-
-//   const events = [
-//     { name: "AI Workshop", date: "2024-11-15", description: "A hands-on workshop on AI.", backgroundImage: "https://via.placeholder.com/600x400.png" },
-//     { name: "AI Hackathon", date: "2024-12-01", description: "Participate in an AI-driven hackathon.", backgroundImage: "https://via.placeholder.com/600x400.png" }
-//   ];
-
-//   const ongoingProjects = [
-//     { title: "AI-based Traffic Management", description: "Developing an AI solution for traffic optimization." },
-//     { title: "AI for Healthcare", description: "Using AI to improve healthcare systems." }
-//   ];
-
-//   const members = [ {
-//     photo: 'https://via.placeholder.com/150', // Replace with actual image URL
-//     name: 'John Doe',
-//     club: 'Tech Club',
-//     role: 'President',
-//     socials: {
-//       instagram: 'https://instagram.com/johndoe',
-//       github: 'https://github.com/johndoe',
-//       linkedin: 'https://linkedin.com/in/johndoe',
-//       email: 'johndoe@example.com',
-//     },
-//   }
-//   ,{
-//     photo: 'https://via.placeholder.com/150', // Replace with actual image URL
-//     name: 'John Doe',
-//     club: 'Tech Club',
-//     role: 'President',
-//     socials: {
-//       instagram: 'https://instagram.com/johndoe',
-//       github: 'https://github.com/johndoe',
-//       linkedin: 'https://linkedin.com/in/johndoe',
-//       email: 'johndoe@example.com',
-//     },
-//   }
-// ];
 
   // Fetch domain data based on domainId
-  const domainData = data[domainId] || {};
+  const domainData = data.domains[domainId] || {};
   const { domainLogo, domainName, domainDescription, events = [], ongoingProjects = [], members = [] } = domainData;
 
   
@@ -77,7 +37,7 @@ const DomainPage = () => {
 
 
         <div className="flex flex-col items-center sm:items-start ">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white pl-4">
             {domainName}
           </h1>
           <h2 className="text-md sm:text-lg md:text-2xl font-semibold text-gray-400 pl-4">
@@ -296,33 +256,6 @@ const DomainPage = () => {
                     </svg>
                   </button>
                 )}
-
-                
-                {/* Progress Bar */}
-                <div className="relative w-full mt-4">
-                  {/* Wrapper for Progress Bar */}
-                  <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden group">
-                    {/* Progress fill */}
-                    <div
-                      className="h-full bg-gradient-to-r from-green-400 to-green-500"
-                      style={{
-                        width: `${project.progress || 60}%`,
-                      }}
-                    ></div>
-
-                    {/* Percentage inside bar on hover */}
-                    <span
-                      className="absolute inset-0 flex items-center justify-center text-xs text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    >
-                      {`${project.progress || 60}%`}
-                    </span>
-                  </div>
-
-                  {/* Percentage beside the bar */}
-                  <span className="ml-2 text-sm text-white">
-                    {`${project.progress || 60}%`}
-                  </span>
-                </div>
 
               </div>
             </div>

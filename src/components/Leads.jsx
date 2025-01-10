@@ -4,19 +4,31 @@ import { FaInstagram, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { ClubMemberCard } from './MemberCard';
 
 export const Leads = () => {
-  const allLeads = Object.keys(data).flatMap((domainKey) => {
-    const domainData = data[domainKey];
-    return domainData.members.filter((member) =>
-      member.role.toLowerCase().includes('lead(s)')
-    );
-  });
+  // const allLeads = Object.keys(data.lead).flatMap((domainKey) => {
+  //   const domainData = data[domainKey];
+  //   return domainData.members.filter((member) =>
+  //     member.role.toLowerCase().includes('lead(s)')
+  //   );
+  // });
 
-  const domainLeads = Object.keys(data).flatMap((domainKey) => {
-    const domainData = data[domainKey];
+  const allLeads = data.lead
+
+  // const domainLeads = Object.keys(data).flatMap((domainKey) => {
+  //   const domainData = data[domainKey];
+  //   return domainData.members.filter((member) =>
+  //     member.role.toLowerCase().includes('domain head')
+  //   );
+  // });
+
+  const domainLeads = Object.keys(data.domains).flatMap((domainKey) => {
+    const domainData = data.domains[domainKey]; 
     return domainData.members.filter((member) =>
       member.role.toLowerCase().includes('domain head')
     );
   });
+  
+  console.log(domainLeads);
+  
 
   return (
     <section>
