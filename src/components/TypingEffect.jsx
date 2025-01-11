@@ -1,10 +1,14 @@
+// Import necessary components
 import React, { useEffect, useState } from 'react';
 
+// TypingEffect component definition
 const TypingEffect = ({ words, speed }) => {
+  // State variables for typing effect
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
   
+  // Effect hook for typing animation
   useEffect(() => {
     let wordIndex = index % words.length; // Cycle through the words
     let charIndex = 0;
@@ -37,6 +41,7 @@ const TypingEffect = ({ words, speed }) => {
     return () => clearInterval(typingInterval);
   }, [words, speed, index, isTyping]);
 
+  // Render the typing effect
   return <span>{displayedText}</span>;
 };
 

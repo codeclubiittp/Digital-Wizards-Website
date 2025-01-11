@@ -3,20 +3,17 @@ import data from '../data.json'; // Adjust the path as needed
 
 const ProjectsGrid = () => {
   // Extract all ongoing projects from all domains
-  // const projects = Object.values(data.domains)
-  //   .flatMap(domain => domain.ongoingProjects || []); // Fallback to empty array if ongoingProjects is missing
-
-
+  // Use flatMap to flatten the array of ongoingProjects from each domain
+  // Filter out duplicate projects based on their title
   const projects = Object.values(data.domains)
-  .flatMap(domain => domain.ongoingProjects || [])
-  .filter((project, index, self) => 
-    index === self.findIndex(p => p.title === project.title)
-  );
-
+    .flatMap(domain => domain.ongoingProjects || []) // Fallback to empty array if ongoingProjects is missing
+    .filter((project, index, self) => 
+      index === self.findIndex(p => p.title === project.title) // Remove duplicates
+    );
 
   return (
     <section className='mt-12'>
-      {/* Leads Section Heading */}
+      {/* Section Heading */}
       <p className="text-[2rem] md:text-[4rem] font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-yellow-100 to-yellow-600 mb-4">
         Ongoing Projects
       </p>
@@ -24,6 +21,7 @@ const ProjectsGrid = () => {
       {/* Line under the heading */}
       <div className="w-24 mx-auto border-t-4 border-white mb-8"></div>
       
+      {/* Grid layout for projects */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
         {projects.map((project, index) => (
           <div
@@ -34,13 +32,13 @@ const ProjectsGrid = () => {
             <div
               className="absolute inset-0 rounded-lg bg-cover bg-center"
               style={{
-                backgroundImage: `url("${project.backgroundImage || 'https://via.placeholder.com/300'}")`,
-                clipPath: 'polygon(10% 0%, 100% 0%, 100% 100%, 50% 100%)',
-                opacity: 0.7,
+                backgroundImage: `url("${project.backgroundImage || 'https://via.placeholder.com/300'}")`, // Fallback to placeholder if no image is provided
+                clipPath: 'polygon(10% 0%, 100% 0%, 100% 100%, 50% 100%)', // Slanted effect
+                opacity: 0.7, // Adjust opacity for better readability
               }}
             ></div>
 
-            {/* Gradient overlay */}
+            {/* Gradient overlay for better text visibility */}
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-60 rounded-lg"></div>
 
             {/* GitHub Icon on the top-right corner */}
@@ -59,17 +57,16 @@ const ProjectsGrid = () => {
                 >
                   <path
                     fillRule="evenodd"
-                    d="M12 0C5.37 0 0 5.37 0 12c0 5.25 3.39 9.7 8.06 11.32.59.11.81-.26.81-.57 0-.29-.01-1.06-.01-2.08-3.29.72-4.05-1.59-4.05-1.59-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.21 0 1.85 1.24 1.85 1.24 1.08 1.85 2.82 1.32 3.51 1.01.11-.78.42-1.32.76-1.63-2.66-.31-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.56.12-3.26 0 0 1.01-.32 3.31 1.24a11.44 11.44 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.3-1.56 3.31-1.24 3.31-1.24.66 1.7.24 2.95.12 3.26.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.62-5.47 5.93.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.22.69.81.57C20.61 21.7 24 17.25 24 12c0-6.63-5.37-12-12-12z"
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.25 3.39 9.7 8.06 11.32.59.11.81-.26.81-.57 0-.29-.01-1.06-.01-2.08-3.29.72-4.05-1.59-4.05-1.59-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.21 0 1.85 1.24 1.85 1.24 1.08 1.85 2.82 1.32 3.51 1.01.11-.78.42-1.32.76-1.63-2.66-.31-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.56.12-3.26 0 0 1.01-.32 3.31 1.24a11.44 11.44 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.3-1.56 3.31-1.24 3.31-1.24.66 1.7.24 2.95.12  3.26.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.62-5.47 5.93.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.22.69.81.57C20.61 21.7 24 17.25 24 12c0-6.63-5.37-12-12-12z"
                     clipRule="evenodd"
                   />
                 </svg>
               </a>
             )}
 
-
             {/* Project Content */}
             <div className="relative z-10 p-4 lg:p-6">
-              {/* Icon */}
+              {/* Icon representing the project */}
               <div className="flex items-center justify-center w-10 lg:w-12 h-10 lg:h-12 mb-4 bg-red-900 bg-opacity-20 rounded-full transition-colors duration-300 ease-out hover:bg-red-800">
                 <svg
                   className="w-5 lg:w-6 h-5 lg:h-6 text-red-400"
@@ -89,18 +86,18 @@ const ProjectsGrid = () => {
 
               {/* Project Title */}
               <h3 className="text-lg lg:text-2xl font-semibold mb-2">
-                {project.title || 'Project Title'}
+                {project.title || 'Project Title'} {/* Fallback title */}
               </h3>
 
               {/* Project Description */}
               <p className="text-xs md:text-sm lg:text-md text-gray-300 mb-4 leading-relaxed">
-                {project.description || 'Project Description'}
+                {project.description || 'Project Description'} {/* Fallback description */}
               </p>
 
               {/* GitHub Repo Button */}
               {project.githubLink && (
                 <button
-                  onClick={() => window.open(project.githubLink, "_blank")}
+                  onClick={() => window.open(project.githubLink, "_blank")} // Open GitHub link in a new tab
                   className="inline-flex items-center text-white bg-gradient-to-r from-neon-blue to-neon-green hover:from-neon-green hover:to-neon-blue font-semibold py-2 px-4 lg:py-3 lg:px-6 rounded-full shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105"
                 >
                   <span>Check the GitHub Repo</span>
@@ -119,7 +116,6 @@ const ProjectsGrid = () => {
         ))}
       </div>
     </section>
-
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 
+// Array of domain objects containing title, description, and background image
 const domains = [
   {
     title: 'App Development',
@@ -34,6 +35,7 @@ const domains = [
   }
 ];
 
+// DomainCards component to display a grid of domain cards
 const DomainCards = () => {
   return (
     <section className="p-6" id="domain-cards">
@@ -45,12 +47,12 @@ const DomainCards = () => {
       {/* Line under the heading */}
       <div className="w-24 mx-auto border-t-4 border-white mb-8"></div>
 
-      {/* Domain Cards */}
+      {/* Domain Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
         {domains.map((domain, index) => (
-          <Link to={`/domain/${domain.title.toLowerCase().replace(/\s+/g, '-')}`}>
+          // Link to navigate to the specific domain page
+          <Link to={`/domain/${domain.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
             <div
-              key={index}
               className="relative p-4 rounded-lg transition transform hover:scale-105"
               style={{
                 backgroundImage: domain.backgroundImage,
@@ -58,24 +60,15 @@ const DomainCards = () => {
                 backgroundPosition: 'center -60px',
               }}
             >
-              {/* Overlay */}
+              {/* Overlay to darken the background image */}
               <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
 
-              {/* Content */}
+              {/* Content inside the card */}
               <div className="relative z-10 flex flex-col items-center text-center text-white">
-                {/* Domain Title and Description */}
+                {/* Domain Title */}
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 mt-[120px]">{domain.title}</h2>
+                {/* Domain Description */}
                 <p className="text-sm sm:text-base font-medium mb-4 px-2">{domain.description}</p>
-
-                {/* Tags */}
-                {/* <div className="flex space-x-2 mt-2">
-                    <span className="px-3 py-1 text-xs sm:text-sm font-semibold bg-white bg-opacity-20 rounded-full cursor-pointer">
-                      Explore
-                    </span>
-                  <span className="px-3 py-1 text-xs sm:text-sm font-semibold bg-white bg-opacity-20 rounded-full cursor-pointer">
-                    Learn More
-                  </span>
-                </div> */}
               </div>
             </div>
           </Link>
