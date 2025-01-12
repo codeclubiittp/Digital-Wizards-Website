@@ -84,11 +84,13 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div className={`hidden md:flex items-center space-x-8 `}>
-          <Link to="/" className="hover:text-gray-400 text-xl cursor-pointer transition">
+          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20`}>
+            <Link to="/" className="hover:text-gray-400 text-xl cursor-pointer transition">
             Home
-          </Link>
+          </Link></div>
           
-          <div className="relative">
+          
+          <div className="relative bg-transparent p-6 rounded-lg hover:bg-gray-400/20">
         {/* Domains Button */}
         <div
           onClick={() => setShowDomainsOptions(!showDomainsOptions)}
@@ -116,9 +118,11 @@ const Navbar = () => {
           </div>
         )}
       </div>
-          <Link to="/contact" className="hover:text-gray-400 text-lg transition">
+          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20`}>
+            <Link to="/contact" className="hover:text-gray-400 text-lg transition">
             Team
-          </Link>
+          </Link></div>
+          
         </div>
       </div>
 
