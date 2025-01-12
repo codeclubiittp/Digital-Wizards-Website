@@ -57,7 +57,7 @@ const DomainCards = () => {
               style={{
                 backgroundImage: domain.backgroundImage,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center -60px',
+                backgroundPosition: 'center -120px',
               }}
             >
               {/* Overlay to darken the background image */}
@@ -66,7 +66,7 @@ const DomainCards = () => {
               {/* Content inside the card */}
               <div className="relative z-10 flex flex-col items-center text-center text-white">
                 {/* Domain Title */}
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 mt-[120px]">{domain.title}</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 mt-[170px]">{domain.title}</h2>
                 {/* Domain Description */}
                 <p className="text-sm sm:text-base font-medium mb-4 px-2">{domain.description}</p>
               </div>
