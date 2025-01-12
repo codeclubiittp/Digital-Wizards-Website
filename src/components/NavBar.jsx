@@ -83,20 +83,21 @@ const Navbar = () => {
         </div>
 
         {/* Menu Items */}
-        <div className={`hidden md:flex items-center space-x-8 `}>
-          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100`}>
-            <Link to="/" className="hover:text-amber-100 text-xl cursor-pointer transition">
+        <div className={`hidden md:flex items-center space-x-8`}>
+            <Link to="/" className="hover:text-amber-100 text-xl cursor-pointer transition bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100">
             Home
-          </Link></div>
+          </Link>
           
           
-          <div className="relative bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100">
+          <div className="relative bg-transparent p-5 rounded-lg">
         {/* Domains Button */}
         <div
           onClick={() => setShowDomainsOptions(!showDomainsOptions)}
           className="block text-lg hover:text-amber-100 cursor-pointer flex items-center space-x-2"
         >
-          <span>Domains</span>
+        <div className="hover:bg-gray-400/20 hover:text-amber-100 p-5 rounded-lg"><span>Domains</span></div>
+        
+         
           {showDomainsOptions ? (
             <ChevronUpIcon className="h-5 w-5 inline-block" />
           ) : (
@@ -118,10 +119,9 @@ const Navbar = () => {
           </div>
         )}
       </div>
-          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100`}>
-            <Link to="/contact" className="hover:text-amber-100 text-lg transition">
+            <Link to="/contact" className="hover:text-amber-100 text-lg transition bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100">
             Team
-          </Link></div>
+          </Link>
           
         </div>
       </div>
