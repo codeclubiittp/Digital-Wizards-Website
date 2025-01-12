@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FallingMatrix from '../components/FallingMatrix.jsx';
 import Navbar from '../components/NavBar.jsx';
 import { Leads } from '../components/Leads.jsx';

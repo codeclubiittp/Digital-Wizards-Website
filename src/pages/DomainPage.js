@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Navbar from '../components/NavBar';
 import FallingMatrix from '../components/FallingMatrix';
 import Footer from '../components/Footer';
-import ClubMember from '../components/ClubMember';
 import { ClubMemberCard } from '../components/MemberCard';
 import data from '../data.json'
 
