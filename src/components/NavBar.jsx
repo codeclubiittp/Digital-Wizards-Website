@@ -84,17 +84,17 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div className={`hidden md:flex items-center space-x-8 `}>
-          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20`}>
-            <Link to="/" className="hover:text-gray-400 text-xl cursor-pointer transition">
+          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100`}>
+            <Link to="/" className="hover:text-amber-100 text-xl cursor-pointer transition">
             Home
           </Link></div>
           
           
-          <div className="relative bg-transparent p-6 rounded-lg hover:bg-gray-400/20">
+          <div className="relative bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100">
         {/* Domains Button */}
         <div
           onClick={() => setShowDomainsOptions(!showDomainsOptions)}
-          className="block text-lg hover:text-gray-400 cursor-pointer flex items-center space-x-2"
+          className="block text-lg hover:text-amber-100 cursor-pointer flex items-center space-x-2"
         >
           <span>Domains</span>
           {showDomainsOptions ? (
@@ -118,8 +118,8 @@ const Navbar = () => {
           </div>
         )}
       </div>
-          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20`}>
-            <Link to="/contact" className="hover:text-gray-400 text-lg transition">
+          <div className={`bg-transparent p-6 rounded-lg hover:bg-gray-400/20 hover:text-amber-100`}>
+            <Link to="/contact" className="hover:text-amber-100 text-lg transition">
             Team
           </Link></div>
           
