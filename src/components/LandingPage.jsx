@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import TypingEffect from "./TypingEffect";
 
 const LandingPage = () => {
   const aboutMeRef = useRef(null);
@@ -30,6 +31,9 @@ const LandingPage = () => {
           text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-yellow-100 to-white"
         >
           Code Club - IIT Tirupati
+        </p>
+        <p className="text-lg font-mono text-[#20C20E]">
+          <span className="text-[2em]">Join us as we </span><TypingEffect words={["build through code.", "break through code.", "innovate through code."]} speed={150} /> 
         </p>
 
         {/* Explore Button */}
