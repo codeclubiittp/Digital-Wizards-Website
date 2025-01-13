@@ -57,7 +57,7 @@ const DomainCards = () => {
               style={{
                 backgroundImage: domain.backgroundImage,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center -60px',
+                backgroundPosition: 'center -100px',
               }}
             >
               {/* Overlay to darken the background image */}
