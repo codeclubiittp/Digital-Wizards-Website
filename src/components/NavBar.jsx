@@ -21,10 +21,11 @@ const Navbar = () => {
     <Link
       to={to}
       onClick={onClick}
-      className="block hover:text-gray-400"
+      className="block group"
     >
-      <ChevronRightIcon className="h-5 w-5 inline-block mr-1" />
-      <span>{text}</span>
+      <ChevronRightIcon className="h-5 w-5 inline-block mr-1 scale-100 group-hover:scale-125 group-hover:translate-x-2 group-hover:text-yellow-400 transition" />
+      <span className="group-hover:text-yellow-400 group-hover:text-[1.03rem] group-hover:pl-2 transition-all">{text}</span>
+      
     </Link>
   );
 
@@ -84,7 +85,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div className={`hidden md:flex items-center space-x-8 `}>
-          <Link to="/" className="hover:text-gray-400 text-xl cursor-pointer transition">
+          <Link to="/" className="hover:text-yellow-200 hover:border-y-4 hover:rounded border-y-0 rounded-[20%] border-blue-800 text-xl cursor-pointer transition-all">
             Home
           </Link>
           
@@ -92,7 +93,7 @@ const Navbar = () => {
         {/* Domains Button */}
         <div
           onClick={() => setShowDomainsOptions(!showDomainsOptions)}
-          className="block text-lg hover:text-gray-400 cursor-pointer flex items-center space-x-2"
+          className="block text-lg cursor-pointer flex items-center space-x-2 hover:text-yellow-200 hover:border-y-4 hover:rounded border-y-0 rounded-[20%] border-blue-800 transition-all"
         >
           <span>Domains</span>
           {showDomainsOptions ? (
@@ -116,7 +117,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-          <Link to="/contact" className="hover:text-gray-400 text-lg transition">
+          <Link to="/contact" className="text-lg hover:text-yellow-200 hover:border-y-4 hover:rounded border-y-0 rounded-[20%] border-blue-800 transition-all">
             Team
           </Link>
         </div>
@@ -144,14 +145,14 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={() => setIsMenuOpen(false)}
-            className="block text-lg hover:text-gray-400"
+            className="block text-lg hover:text-yellow-400 hover:text-xl transition-all"
           >
             Home
           </Link>
 
           <div
             onClick={() => setShowDomainsOptions(!showDomainsOptions)}
-            className="block text-lg hover:text-gray-400 cursor-pointer flex items-center space-x-2"
+            className="block text-lg hover:text-yellow-400 hover:text-xl transition-all cursor-pointer flex items-center space-x-2"
           >
             <span>Domains</span>
             {showDomainsOptions ? (
@@ -177,7 +178,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={() => setIsMenuOpen(false)}
-            className="block text-lg hover:text-gray-400"
+            className="block text-lg hover:text-yellow-400 hover:text-xl transition-all"
           >
             Team
           </Link>
