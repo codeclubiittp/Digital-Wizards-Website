@@ -45,15 +45,15 @@ const DomainCards = () => {
       </p>
 
       {/* Line under the heading */}
-      <div className="w-24 mx-auto border-t-4 border-white mb-8"></div>
+      <div className="w-24 mx-auto border-t-4 border-white mb-4"></div>
 
       {/* Domain Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-0">
         {domains.map((domain, index) => (
           // Link to navigate to the specific domain page
           <Link to={`/domain/${domain.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
             <div
-              className="relative p-4 rounded-lg transition transform hover:scale-105 overflow-hidden"
+              className="relative pt-0 pb-4 px-4 rounded-lg transition transform hover:scale-105 overflow-hidden"
             >
             <img className="scale-[200%] translate-y-1/3" src = {domain.backgroundImage} alt = {domain.title}/>
               {/* Overlay to darken the background image */}
