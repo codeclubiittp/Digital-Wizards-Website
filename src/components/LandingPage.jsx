@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Typewriter from "typewriter-effect";
 
 const LandingPage = () => {
   const aboutMeRef = useRef(null);
@@ -30,6 +31,17 @@ const LandingPage = () => {
           text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-yellow-100 to-white"
         >
           Code Club - IIT Tirupati
+        </p>
+        <p className="text-lg font-mono text-white">
+            Join us as we <div className="inline-block text-green-400 underline">
+            <Typewriter
+                options={{
+                    strings: ["evolve through code.", "empower through code.", "innovate through code."],
+                    autoStart: true,
+                    loop: true,
+                  }}
+            />
+        </div>
         </p>
 
         {/* Explore Button */}
