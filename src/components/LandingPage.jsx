@@ -32,7 +32,7 @@ const LandingPage = () => {
         >
           Code Club - IIT Tirupati
         </p>
-        <p className="text-lg font-mono text-white">
+        <p className="xl:text-[1.5rem] lg:text-[1.5rem] md:text-[1.5rem] sm:text-[1rem] font-mono text-white"> {/* Font is half of the above text */}
             Join us as we <div className="inline-block text-green-400 underline">
             <Typewriter
                 options={{
