@@ -8,10 +8,11 @@ import { Leads } from "../components/Leads.jsx";
 import Events from "../components/Events.jsx";
 import ProjectsGrid from "../components/OngoingProjects.jsx";
 import KnowledgeTransfer from "../components/KnowledgeTransfer.jsx";
+import "../css/dropShadow.css";
 
 function HomePage() {
     return (
-        <div>
+        <div className="homeContainer">
             <FallingMatrix />
             <Navbar />
             <LandingPage />
