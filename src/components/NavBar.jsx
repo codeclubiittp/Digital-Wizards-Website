@@ -21,7 +21,7 @@ const Navbar = () => {
     <Link
       to={to}
       onClick={onClick}
-      className="block hover:text-gray-400"
+      className="block hover:text-white-400"
     >
       <ChevronRightIcon className="h-5 w-5 inline-block mr-1" />
       <span>{text}</span>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div >
-        <Link to="/" className="hover:text-gray-400 transition">
+        <Link to="/" className="hover:text-white-400 transition">
           <img
             src="/images/domainLogos/DW_darkmode.png"
             alt="Logo"
