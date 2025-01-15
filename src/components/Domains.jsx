@@ -53,11 +53,12 @@ const DomainCards = () => {
           // Link to navigate to the specific domain page
           <Link to={`/domain/${domain.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
             <div
-              className="relative p-4 rounded-lg transition transform hover:scale-105"
+              className="relative p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-500" 
               style={{
                 backgroundImage: domain.backgroundImage,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center -60px',
+                backgroundSize: 'contain',
+                backgroundPosition: 'center -45px',
+                backgroundRepeat: 'no-repeat',
               }}
             >
               {/* Overlay to darken the background image */}
