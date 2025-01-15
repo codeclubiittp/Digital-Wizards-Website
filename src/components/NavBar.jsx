@@ -21,7 +21,7 @@ const Navbar = () => {
     <Link
       to={to}
       onClick={onClick}
-      className="block hover:text-gray-400"
+      className="block hover:text-gray-400 hover:border-blue-500 border-2 border-transparent hover:border-2 p-2"
     >
       <ChevronRightIcon className="h-5 w-5 inline-block mr-1" />
       <span>{text}</span>
