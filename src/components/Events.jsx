@@ -18,7 +18,7 @@ const Events = () => {
       <div className="w-24 mx-auto border-t-4 border-white mb-8"></div>
 
       {/* Grid layout for displaying events */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 sm:gap-8">
         {events
           .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort events again (redundant, but ensures order)
           .slice(0, 4) // Display only the first 4 events
