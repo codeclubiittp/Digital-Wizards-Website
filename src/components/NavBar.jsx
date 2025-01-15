@@ -10,12 +10,12 @@ const Navbar = () => {
   const [showDomainIcons, setShowDomainIcons] = useState(false);
 
   const domains = [
-    { to: '/domain/app-development', text: 'App Development', icon: 'url("/images/domainLogos/App_Negative.png")' },
-    { to: '/domain/architecture', text: 'Architecture', icon: 'url("/images/domainLogos/C.Arch_Negative.png")' },
-    { to: '/domain/competitive-programming', text: 'Competitive Programming', icon: 'url("/images/domainLogos/CP_Negative.png")' },
-    { to: '/domain/cyber-security', text: 'Cyber Security', icon: 'url("/images/domainLogos/Cyber_Negative.png")' },
-    { to: '/domain/software-engineering', text: 'Software Engineering', icon: 'url("/images/domainLogos/DevOps_Negative.png")' },
-    { to: '/domain/web-development', text: 'Web Development',icon: 'url("/images/domainLogos/WebDevLogo.png")' },
+    { to: '/domain/app-development', text: 'App Development', icon: "/images/domainLogos/App_Negative.png" },
+    { to: '/domain/architecture', text: 'Architecture', icon: "/images/domainLogos/C.Arch_Negative.png" },
+    { to: '/domain/competitive-programming', text: 'Competitive Programming', icon: "/images/domainLogos/CP_Negative.png" },
+    { to: '/domain/cyber-security', text: 'Cyber Security', icon: "/images/domainLogos/Cyber_Negative.png" },
+    { to: '/domain/software-engineering', text: 'Software Engineering', icon: "/images/domainLogos/DevOps_Negative.png" },
+    { to: '/domain/web-development', text: 'Web Development',icon: "/images/domainLogos/WebDevLogo.png" },
   ];
 
 
@@ -30,13 +30,14 @@ const Navbar = () => {
     </Link>
   );
 
-  const DomainInfo = ({ to, text, onClick }) => (
+  const DomainInfo = ({ to, icon, onClick }) => (
     <Link
       to={to}
       onClick={onClick}
       className="block hover:text-amber-100 hover:ml-2"
     >
-      <span>{text}</span>
+      <div><img src={icon} alt="icon" width={100}></img></div>
+      
     </Link>
   );
 
@@ -83,14 +84,14 @@ const Navbar = () => {
           />
           </Link>
           {showDomainIcons && (
-          <div className="absolute left-200 rounded-lg p-3 space-y-2 w-72"
+          <div className="absolute left-25 rounded-lg p-3 space-y-2 w-72 -ml-4"
           
           >
-            {domains.map(({ to, text }) => (
+            {domains.map(({ to, icon }) => (
               <DomainInfo
                 key={to}
                 to={to}
-                text={text}
+                icon={icon}
                 onClick={handleLinkClick}
               />
             ))}
