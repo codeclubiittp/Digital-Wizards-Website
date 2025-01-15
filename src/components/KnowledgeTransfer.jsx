@@ -13,7 +13,7 @@ function KnowledgeTransfer() {
       <div className="flex justify-center items-center my-5">
 
                 <a
-                    href="/contact"
+                    href="https://drive.google.com/drive/folders/1eNzOZAQZrs6bDScnVS-kewUBSEyMkgBj"
                     className="group relative inline-block bg-white rounded-full 
             py-3 px-5 md:py-4 md:px-7 lg:py-4 lg:px-9 
             text-[1rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]
