@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import TypingEffect from "./TypingEffect";
+import '../css/dropShadow.css';
 
 const LandingPage = () => {
   const aboutMeRef = useRef(null);
@@ -11,7 +12,7 @@ const LandingPage = () => {
   };
   return (
     <div
-      className="h-screen bg-cover bg-center flex justify-center items-center"
+      className="h-screen bg-cover bg-center flex justify-center items-center homeContainer"
       // style={{ backgroundImage: 'url("/images/background.png")' }} // Update the path to your background image
     >
       <div className="text-center space-y-0">
