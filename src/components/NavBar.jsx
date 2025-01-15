@@ -7,15 +7,17 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showDomainsOptions, setShowDomainsOptions] = useState(false);
+  const [showDomainIcons, setShowDomainIcons] = useState(false);
 
   const domains = [
-    { to: '/domain/app-development', text: 'App Development' },
-    { to: '/domain/architecture', text: 'Architecture' },
-    { to: '/domain/competitive-programming', text: 'Competitive Programming' },
-    { to: '/domain/cyber-security', text: 'Cyber Security' },
-    { to: '/domain/software-engineering', text: 'Software Engineering' },
-    { to: '/domain/web-development', text: 'Web Development' },
+    { to: '/domain/app-development', text: 'App Development', icon: 'url("/images/domainLogos/App_Negative.png")' },
+    { to: '/domain/architecture', text: 'Architecture', icon: 'url("/images/domainLogos/C.Arch_Negative.png")' },
+    { to: '/domain/competitive-programming', text: 'Competitive Programming', icon: 'url("/images/domainLogos/CP_Negative.png")' },
+    { to: '/domain/cyber-security', text: 'Cyber Security', icon: 'url("/images/domainLogos/Cyber_Negative.png")' },
+    { to: '/domain/software-engineering', text: 'Software Engineering', icon: 'url("/images/domainLogos/DevOps_Negative.png")' },
+    { to: '/domain/web-development', text: 'Web Development',icon: 'url("/images/domainLogos/WebDevLogo.png")' },
   ];
+
 
   const DomainLink = ({ to, text, onClick }) => (
     <Link
@@ -24,6 +26,16 @@ const Navbar = () => {
       className="block hover:text-amber-100 hover:ml-2"
     >
       <ChevronRightIcon className="h-5 w-5 inline-block mr-1" />
+      <span>{text}</span>
+    </Link>
+  );
+
+  const DomainInfo = ({ to, text, onClick }) => (
+    <Link
+      to={to}
+      onClick={onClick}
+      className="block hover:text-amber-100 hover:ml-2"
+    >
       <span>{text}</span>
     </Link>
   );
@@ -58,14 +70,32 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
-        <div >
+        <div  
+        onMouseEnter={() => setShowDomainIcons(!showDomainIcons)}
+        onMouseLeave={() => setShowDomainIcons(!showDomainIcons)}
+        >
         <Link to="/" className="hover:text-gray-400 transition">
           <img
             src="/images/domainLogos/DW_darkmode.png"
             alt="Logo"
-            className="h-24 w-auto"
+            className="h-24 w-auto relative"
+            
           />
           </Link>
+          {showDomainIcons && (
+          <div className="absolute left-200 rounded-lg p-3 space-y-2 w-72"
+          
+          >
+            {domains.map(({ to, text }) => (
+              <DomainInfo
+                key={to}
+                to={to}
+                text={text}
+                onClick={handleLinkClick}
+              />
+            ))}
+          </div>
+        )}
         </div>
 
         {/*Hamburger Menu Button */}
