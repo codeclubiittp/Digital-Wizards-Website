@@ -36,7 +36,7 @@ const Navbar = () => {
       onClick={onClick}
       className="block hover:text-amber-100 hover:ml-2"
     >
-      <div><img src={icon} alt="icon" width={100}></img></div>
+      <div><img src={icon} alt="icon" width={100} className="opacity-80 hover:opacity-100"></img></div>
       
     </Link>
   );
