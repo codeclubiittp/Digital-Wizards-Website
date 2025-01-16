@@ -167,7 +167,7 @@ function Footer() {
           </ul>
           <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
           {/* About learn more and other */}
-          <div className='flex'>
+          <div className='flex pb-8'>
             {/* About */}
             <div>
               <h2 className='text-xl mb-4'>About</h2>
@@ -193,6 +193,24 @@ function Footer() {
             </li>
           </ul>
         </div>
+            </div>
+          </div>
+          <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
+          <div className='last-section flex gap-4'>
+            <div className='logo'>
+            <div className="w-24 h-24 rounded-full mb-4 sm:mb-2">
+            <img
+              src="/images/domainLogos/DW_darkmode.png" // Logo image source
+              alt="Logo" // Alt text for accessibility
+              className="h-24 w-auto" // Styling for the logo
+            />
+          </div>
+            </div>
+            <div className='content flex flex-col justify-center'>
+              {/* Title */}
+          <p className="text-lg sm:text-xl font-semibold text-center sm:text-left">Digital Wizards</p>
+          {/* Tagline */}
+          <p className="text-sm text-gray-400 text-center sm:text-left">Innovating the digital world, one line of code at a time.</p>
             </div>
           </div>
           </div>
