@@ -166,6 +166,35 @@ function Footer() {
             </li>
           </ul>
           <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
+          {/* About learn more and other */}
+          <div className='flex'>
+            {/* About */}
+            <div>
+              <h2 className='text-xl mb-4'>About</h2>
+              <div className="flex flex-col items-center space-y-6 sm:space-y-0 sm:space-x-8 sm:flex-row w-full sm:w-auto">
+          <ul className="space-y-2 sm:space-y-0 flex flex-col gap-2 text-gray-300">
+            {/* Home Link */}
+            <li>
+              <Link to="/" className="hover:text-white cursor-pointer">
+                Home
+              </Link>
+            </li>
+            {/* Domains Link */}
+            <li>
+              <Link to="/domains" className="hover:text-white cursor-pointer">
+                Domains
+              </Link>
+            </li>
+            {/* Contact Us Link */}
+            <li>
+              <Link to="/contact" className="hover:text-white cursor-pointer">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+            </div>
+          </div>
           </div>
       
     </footer>
