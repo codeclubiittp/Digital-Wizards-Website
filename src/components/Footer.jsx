@@ -165,8 +165,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-          {/* <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-          <p>Hello</p> */}
+          <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
           </div>
       
     </footer>
