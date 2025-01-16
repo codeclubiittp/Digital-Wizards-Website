@@ -198,11 +198,11 @@ function Footer() {
           <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
           <div className='last-section flex gap-4'>
             <div className='logo'>
-            <div className="w-24 h-24 rounded-full mb-4 sm:mb-2">
+            <div className="w-24 h-20 rounded-full mb-4 sm:mb-2">
             <img
               src="/images/domainLogos/DW_darkmode.png" // Logo image source
               alt="Logo" // Alt text for accessibility
-              className="h-24 w-auto" // Styling for the logo
+              className="h-20 w-auto" // Styling for the logo
             />
           </div>
             </div>
@@ -214,6 +214,19 @@ function Footer() {
             </div>
           </div>
           </div>
+           {/* Bottom Section - Copyright and Credits */}
+      <div className="w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center py-6 mt-8">
+        {/* Copyright Notice */}
+        <p className=" text-sm sm:text-base text-gray-400">
+          &copy; {new Date().getFullYear()} Digital Wizards. All rights reserved.
+        </p>
+        {/* Credits */}
+        <p className="text-sm sm:text-base text-gray-400 mt-2">
+          Crafted with <span className="text-neon-blue">💙</span> by 
+          <span className="font-semibold text-white"> Team Web Development</span> of 
+          <span className="font-semibold text-neon-blue"> Digital Wizards</span>.
+        </p>
+      </div>
       
     </footer>
     </div>
