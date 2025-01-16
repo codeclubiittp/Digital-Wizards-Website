@@ -4,7 +4,7 @@ import { FaInstagram, FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa'; /
 
 function Footer() {
   return (
-    <footer className="bg-black text-white py-10">
+    <div><footer className="bg-black text-white py-10">
       {/* Main container for footer content */}
       <div className="max-w-screen-xl mx-auto px-6 sm:px-12 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-8 sm:space-y-0">
 
@@ -114,6 +114,64 @@ function Footer() {
         </p>
       </div>
     </footer>
+    <footer className='bg-slate-950 text-white py-10'>
+      {/* Main Footer Content */}
+    <div className="max-w-screen-xl mx-auto px-6 sm:px-12 flex flex-col sm:flex-col justify-between items-start sm:items-start space-y-8 sm:space-y-0">
+      {/* First Section */}
+        <ul className="flex space-x-6 justify-center sm:justify-start py-10">
+          <li><p className='text-xl'>Follow us</p></li>
+            {/* Instagram Icon */}
+            <li>
+              <a
+                href="https://www.instagram.com/digitalwizardsiitt/" // Instagram link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-500 transition duration-300"
+              >
+                <FaInstagram size={28} /> {/* Instagram icon */}
+              </a>
+            </li>
+            {/* GitHub Icon */}
+            <li>
+              <a
+                href="https://github.com/codeclubiittp" // GitHub link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gray-500 transition duration-300"
+              >
+                <FaGithub size={28} /> {/* GitHub icon */}
+              </a>
+            </li>
+            {/* LinkedIn Icon */}
+            <li>
+              <a
+                href="https://www.linkedin.com/company/digital-wizards-iitt" // LinkedIn link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 transition duration-300"
+              >
+                <FaLinkedin size={28} /> {/* LinkedIn icon */}
+              </a>
+            </li>
+            {/* Discord Icon */}
+            <li>
+              <a
+                href="https://discord.gg/XmMxm6qd" // Discord link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 transition duration-300"
+              >
+                <FaDiscord size={28} /> {/* Discord icon */}
+              </a>
+            </li>
+          </ul>
+          {/* <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          <p>Hello</p> */}
+          </div>
+      
+    </footer>
+    </div>
+    
   );
 }
 
