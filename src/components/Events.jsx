@@ -23,9 +23,10 @@ const Events = () => {
           .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort events again (redundant, but ensures order)
           .slice(0, 4) // Display only the first 4 events
           .map((event, index) => (
+            <div className="relative p-[1px] lg:p-[1px] hover:bg-gradient-to-tr from-indigo-500 to-teal-300 rounded-lg shadow-lg text-white transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl">
             <div
               key={index}
-              className="relative p-4 lg:p-6 bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg text-white transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl"
+              className="relative p-4 lg:p-6 h-full bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg text-white"
             >
               {/* Slanted background image */}
               <div
@@ -76,6 +77,7 @@ const Events = () => {
                   {/* Fallback description */}
                 </p>
               </div>
+            </div>
             </div>
           ))}
       </div>
