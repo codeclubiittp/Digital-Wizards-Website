@@ -24,9 +24,10 @@ const ProjectsGrid = () => {
       {/* Grid layout for projects */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
         {projects.map((project, index) => (
+          <div className='relative p-[1px] lg:p-[1px] hover:bg-gradient-to-tr from-indigo-500 to-teal-300 rounded-lg shadow-lg text-white transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl'>
           <div
             key={index}
-            className="relative p-4 lg:p-6 bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg text-white transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl"
+            className="relative h-full p-4 lg:p-6 bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 rounded-lg shadow-lg text-white"
           >
             {/* Slanted background image on the right half */}
             <div
@@ -112,6 +113,7 @@ const ProjectsGrid = () => {
                 </button>
               )}
             </div>
+          </div>
           </div>
         ))}
       </div>
