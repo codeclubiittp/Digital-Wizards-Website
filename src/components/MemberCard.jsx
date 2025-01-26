@@ -4,8 +4,8 @@ import { FaInstagram, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export const ClubMemberCard = ({ member }) => {
   return (
     // Main container for the member card with hover effect and gradient background
-    <div className='relative flex w-full max-w-md md:px- md:max-w-sm p-[2px] bg-gradient-to-br from-indigo-500 to-teal-300 rounded-2xl shadow-xl text-white transition-transform transform hover:scale-105 duration-300'>
-      <div className="relative flex w-full max-w-md md:px-2 md:max-w-sm p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl shadow-xl text-white transition-transform transform hover:scale-105 duration-300">
+    <div className='relative flex w-full max-w-md md:px- md:max-w-sm p-[2px] hover:bg-gradient-to-br from-indigo-500 to-teal-300 rounded-2xl shadow-xl transition-transform transform duration-300 hover:scale-105'>
+      <div className="relative flex w-full max-w-md md:px-2 md:max-w-sm p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl shadow-xl text-white ">
       
       {/* Profile Photo Section */}
       <div className="flex-shrink-0">
