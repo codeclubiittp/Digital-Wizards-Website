@@ -28,9 +28,10 @@ export const Leads = () => {
       {/* All Leads Cards */}
       <div className="mx-3 md:mx-0 flex flex-wrap justify-center gap-12 mt-8">
         {allLeads.map((lead, index) => (
+          <div className='relative flex w-full max-w-md md:px- md:max-w-sm p-[2px] hover:bg-gradient-to-br from-indigo-500 to-teal-300 rounded-2xl shadow-xl transition-transform transform duration-300 hover:scale-105'>
           <div
             key={index}
-            className="relative w-full max-w-sm p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl shadow-xl text-white transition-transform transform hover:scale-105 duration-300 flex flex-col items-center text-center space-y-4"
+            className="relative w-full max-w-sm p-6 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl shadow-xl text-white flex flex-col items-center text-center space-y-4"
           >
             {/* Profile Photo */}
             <div className="relative">
@@ -93,6 +94,7 @@ export const Leads = () => {
 
             {/* Glow Effect for Card */}
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-neon-blue to-neon-green opacity-20 blur-lg pointer-events - none"></div>
+          </div>
           </div>
         ))}
       </div>
