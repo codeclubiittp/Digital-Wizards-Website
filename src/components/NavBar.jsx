@@ -26,18 +26,25 @@ const Navbar = () => {
       className="block hover:text-gray-400"
     >
       <ChevronRightIcon className="h-5 w-5 inline-block mr-1" />
-      <span>{text}</span>
+      <span className="text-white">{text}</span>
     </Link>
   );
 
-  const DomainInfo = ({ to, icon, onClick }) => (
+  const DomainInfo = ({ to, icon,text, onClick }) => (
     <Link
       to={to}
       onClick={onClick}
-      className="block hover:text-amber-100 hover:ml-2"
+      className="block hover:text-amber-100 hover:ml-5"
     >
-      <div><img src={icon} alt="icon" width={100} className="opacity-80 hover:opacity-100 -mt-3"></img></div>
-      
+      <div className="flex items-center space-x-4 bg-black rounded-3xl opacity-80">
+        <img
+          src={icon}
+          alt="icon"
+          width={100}
+          className="opacity-80 rounded-full hover:opacity-100"
+        />
+        <span>{text}</span>
+      </div>
     </Link>
   );
 
@@ -76,22 +83,25 @@ const Navbar = () => {
         onMouseLeave={() => setShowDomainIcons(!showDomainIcons)}
         >
         <Link to="/" className="hover:text-gray-400 transition">
+        <div class="relative">
+          <div class="animate-border rounded-3xl"></div>
           <img
             src="/images/domainLogos/DW_darkmode.png"
             alt="Logo"
-            className="h-24 w-auto relative"
-            
+            class="h-24 w-auto filter"
           />
+        </div>
           </Link>
           {showDomainIcons && (
           <div className="absolute left-25 rounded-lg p-3 space-y-2 w-72 -ml-4"
           
           >
-            {domains.map(({ to, icon }) => (
+            {domains.map(({ to, icon,text }) => (
               <DomainInfo
                 key={to}
                 to={to}
                 icon={icon}
+                text={text}
                 onClick={handleLinkClick}
               />
             ))}
