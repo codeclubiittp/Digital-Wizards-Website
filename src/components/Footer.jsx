@@ -4,13 +4,54 @@ import { FaInstagram, FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa'; /
 
 function Footer() {
   return (
-    
-    <footer className='bg-slate-950 text-white py-10'>
-      {/* Main Footer Content */}
-    <div className="max-w-screen-xl mx-auto px-6 sm:px-12 flex flex-col sm:flex-col justify-between items-start sm:items-start space-y-8 sm:space-y-0">
-      {/* First Section */}
-        <ul className="flex space-x-6 justify-center sm:justify-start py-10">
-          <li><p className='text-xl'>Follow us</p></li>
+    <footer className="bg-black text-white py-10">
+      {/* Main container for footer content */}
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-12 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-8 sm:space-y-0">
+
+        {/* Left Section - Logo, Title, and Tagline */}
+        <div className="flex flex-col items-center sm:items-start w-full sm:w-auto">
+          {/* Logo */}
+          <div className="w-24 h-24 rounded-full mb-4 sm:mb-2">
+            <img
+              src="/images/domainLogos/DW_darkmode.png" // Logo image source
+              alt="Logo" // Alt text for accessibility
+              className="h-24 w-auto" // Styling for the logo
+            />
+          </div>
+          {/* Title */}
+          <p className="text-lg sm:text-xl font-semibold text-center sm:text-left">Digital Wizards</p>
+          {/* Tagline */}
+          <p className="text-sm text-gray-400 text-center sm:text-left">Innovating the digital world, one line of code at a time.</p>
+        </div>
+
+        {/* Right Section - Links (Home, Domains, Contact Us) */}
+        <div className="flex flex-col items-center space-y-6 sm:space-y-0 sm:space-x-8 sm:flex-row w-full sm:w-auto">
+          <ul className="space-y-2 sm:space-y-0 text-center">
+            {/* Home Link */}
+            <li>
+              <Link to="/" className="hover:text-gray-400 cursor-pointer">
+                Home
+              </Link>
+            </li>
+            {/* Domains Link */}
+            <li>
+              <Link to="/domains" className="hover:text-gray-400 cursor-pointer">
+                Domains
+              </Link>
+            </li>
+            {/* Contact Us Link */}
+            <li>
+              <Link to="/contact" className="hover:text-gray-400 cursor-pointer">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Middle Section - Social Links */}
+        <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start space-y-6 sm:space-y-0 sm:space-x-8 w-full sm:w-auto">
+          {/* Social Media Icons */}
+          <ul className="flex space-x-6 justify-center sm:justify-start">
             {/* Instagram Icon */}
             <li>
               <a
@@ -56,56 +97,10 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
-          {/* About learn more and other */}
-          <div className='flex pb-8'>
-            {/* About */}
-            <div>
-              <h2 className='text-xl mb-4'>About</h2>
-              <div className="flex flex-col items-center space-y-6 sm:space-y-0 sm:space-x-8 sm:flex-row w-full sm:w-auto">
-          <ul className="space-y-2 sm:space-y-0 flex flex-col gap-2 text-gray-300">
-            {/* Home Link */}
-            <li>
-              <Link to="/" className="hover:text-white cursor-pointer">
-                Home
-              </Link>
-            </li>
-            {/* Domains Link */}
-            <li>
-              <Link to="/domains" className="hover:text-white cursor-pointer">
-                Domains
-              </Link>
-            </li>
-            {/* Contact Us Link */}
-            <li>
-              <Link to="/contact" className="hover:text-white cursor-pointer">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
         </div>
-            </div>
-          </div>
-          <hr className="border-t-0.5 border-gray-700 flex-shrink-0 w-[90rem] py-4" />
-          <div className='last-section flex gap-4'>
-            <div className='logo'>
-            <div className="w-24 h-20 rounded-full mb-4 sm:mb-2">
-            <img
-              src="/images/domainLogos/DW_darkmode.png" // Logo image source
-              alt="Logo" // Alt text for accessibility
-              className="h-20 w-auto" // Styling for the logo
-            />
-          </div>
-            </div>
-            <div className='content flex flex-col justify-center'>
-              {/* Title */}
-          <p className="text-lg sm:text-xl font-semibold text-center sm:text-left">Digital Wizards</p>
-          {/* Tagline */}
-          <p className="text-sm text-gray-400 text-center sm:text-left">Innovating the digital world, one line of code at a time.</p>
-            </div>
-          </div>
-          </div>
-           {/* Bottom Section - Copyright and Credits */}
+      </div>
+
+      {/* Bottom Section - Copyright and Credits */}
       <div className="w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center py-6 mt-8">
         {/* Copyright Notice */}
         <p className=" text-sm sm:text-base text-gray-400">
@@ -118,10 +113,7 @@ function Footer() {
           <span className="font-semibold text-neon-blue"> Digital Wizards</span>.
         </p>
       </div>
-      
     </footer>
-    
-    
   );
 }
 
