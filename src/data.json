@@ -1,544 +1,663 @@
 {
-  "lead" : [
-    {
-      "photo": "/images/domains/cp/members/SayanKundu.jpg",
-      "name": "Sayan Kundu",
-      "club": "Competitive Programming",
-      "role": "Lead(s)",
-      "socials": {
-        "instagram": "_sxyxn.__",
-        "github": "electro-coder",
-        "linkedin": "sayan-kundu-672b77257",
-        "email": "ee22b060@iittp.ac.in"
-      }
-    },
-    {
-      "photo": "/images/domains/se/members/AniketJohri.jpg",
-      "name": "Aniket Johri",
-      "club": "Software Engineering",
-      "role": "Lead(s)",
-      "socials": {
-        "instagram": "aniket.johri",
-        "github": "Error-404-NotFound",
-        "linkedin": "aniket-johri-082a83257",
-        "email": "cs22b028@iittp.ac.in"
-      }
+    "lead": [
+        {
+            "photo": "/images/domains/cp/members/SayanKundu.jpg",
+            "name": "Sayan Kundu",
+            "club": "Competitive Programming",
+            "role": "Lead(s)",
+            "socials": {
+                "instagram": "_sxyxn.__",
+                "github": "electro-coder",
+                "linkedin": "sayan-kundu-672b77257",
+                "email": "ee22b060@iittp.ac.in"
+            }
+        },
+        {
+            "photo": "/images/domains/se/members/AniketJohri.jpg",
+            "name": "Aniket Johri",
+            "club": "Software Engineering",
+            "role": "Lead(s)",
+            "socials": {
+                "instagram": "aniket.johri",
+                "github": "Error-404-NotFound",
+                "linkedin": "aniket-johri-082a83257",
+                "email": "cs22b028@iittp.ac.in"
+            }
+        }
+    ],
+    "domains": {
+        "app-development": {
+            "domainLogo": "/images/domainLogos/App_Negative.png",
+            "domainName": "App Development",
+            "domainDescription": "We're a passionate team of three, diving deep into the world of app development! Our domain focuses on creating interactive, user-friendly solutions that simplify everyday tasks and enhance connectivity. We also host exciting app dev sessions to exchange ideas, sharpen skills, and inspire innovation—because building great apps starts with a great community!",
+            "events": [
+                {
+                    "name": "Git, Docker and Firebase",
+                    "date": "2024-08-17",
+                    "description": "Conducted an interesting session on Git, Docker, and Firebase.",
+                    "backgroundImage": "/images/domains/AppDev/events/Git, Docker and Firebase/img1.jpg"
+                },
+                {
+                    "name": "React Native X Firebase",
+                    "date": "2024-09-21",
+                    "description": "We have conducted an interactive session on React Native and Firebase with a demo.",
+                    "backgroundImage": ""
+                },
+                {
+                    "name": "Flutter X Firebase",
+                    "date": "2024-10-24",
+                    "description": "Our team conducted an interactive hands-on development session with Flutter.",
+                    "backgroundImage": "/images/domains/AppDev/events/Flutter X Firebase/img1.jpg"
+                }
+            ],
+            "ongoingProjects": [
+                {
+                    "title": "IIT Tirupati Utility App",
+                    "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features.",
+                    "backgroundImage": "/images/domains/AppDev/Projects/IIT Tirupati Utility App/project.jpeg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "10"
+                }
+            ],
+            "members": [
+                {
+                    "photo": "/images/domains/appDev/members/ChitrakshVasantati.jpg",
+                    "name": "Chitraksh Vasantati",
+                    "club": "App Development",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "cv_23076",
+                        "github": "VasantatiChitraksh",
+                        "linkedin": "chitraksh-vasantati",
+                        "email": "cs23b054@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/appDev/members/AnirudhArrepu.jpeg",
+                    "name": "Anirudh Arrepu",
+                    "club": "App Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "anirudharrepu",
+                        "github": "AnirudhArrepu",
+                        "linkedin": "AnirudhArrepu",
+                        "email": "cs23b008@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/appDev/members/NiranjanM.jpg",
+                    "name": "Niranjan M",
+                    "club": "App Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "iamnir2401",
+                        "github": "all-coder",
+                        "linkedin": "niranjan-m-038806292",
+                        "email": "me23b036@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/appDev/members/DhanushM.jpg",
+                    "name": "Dhanush M",
+                    "club": "App Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "cs22b053",
+                        "linkedin": "Dhanush M",
+                        "email": "cs22b053@iittp.ac.in"
+                    }
+                }
+            ]
+        },
+        "architecture": {
+            "domainLogo": "/images/domainLogos/C.Arch_Negative.png",
+            "domainName": "Architecture",
+            "domainDescription": "Explore the cutting-edge technologies behind High-Performance Computing (HPC)! This domain focuses on the principles of CPU and GPU architectures, parallel processing, and system scalability. Learn how modern processors are designed, how GPUs accelerate computations, and how parallel algorithms transform the way we solve large-scale problems. Whether you're passionate about optimizing performance, exploring distributed computing, or advancing HPC applications, this domain provides the knowledge and skills to push the boundaries of computational efficiency.",
+            "events": [
+                {
+                    "name": "Introduction to CUDA Programming",
+                    "date": "2024-11-13",
+                    "description": "This session introduced the basics of CUDA programming, focusing on GPU computing and parallel processing concepts. Participants learned foundational skills to write and execute simple CUDA programs, gaining insight into how GPUs accelerate computation. The session provided a starting point for exploring high-performance programming and solving real-world computational challenges.",
+                    "backgroundImage": "/images/domains/arch/events/Introduction to CUDA Programming/img1.jpeg"
+                }
+            ],
+            "ongoingProjects": [
+                {
+                    "title": "Parallel Computing for GANs",
+                    "description": "Implementing a Generative Adversarial Network (GAN) using parallel computing techniques to accelerate training, manage larger datasets, and enhance output quality. The project utilizes CUDA for GPU programming and PyTorch for GAN development, requiring access to the Institute's GPU cluster for testing and validation.",
+                    "backgroundImage": "/images/domains/arch/projects/Parallel Computing for GANs/img1.jpeg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "30"
+                }
+            ],
+            "members": [
+                {
+                    "photo": "/images/domains/arch/members/AyushGupta.jpg",
+                    "name": "Ayush Gupta",
+                    "club": "Computer Architecture",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "_.ayushhh.__._",
+                        "github": "ayushhwho",
+                        "linkedin": "ayush-gupta-168300283",
+                        "email": "ee22b005@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/arch/members/SuriyaaMM.jpg",
+                    "name": "Suriyaa MM",
+                    "club": "Computer Architecture",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "mms_2705",
+                        "github": "SuriyaaMM",
+                        "linkedin": "Suriyaa MM",
+                        "email": "ee23b054@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/arch/members/PDharani.jpg",
+                    "name": "P Dharani",
+                    "club": "Computer Architecture",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "dharani_parvatham",
+                        "github": "Srihanu1999",
+                        "linkedin": "Dharani P",
+                        "email": "ee23b069@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/arch/members/ChVenkataSaiPranavTej.jpg",
+                    "name": "Ch Venkata Sai Pranav Tej",
+                    "club": "Computer Architecture",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "Codebank-Pranav-Tej-Ch-Network",
+                        "linkedin": "Pranav Tej Ch",
+                        "email": "ee24b010@iittp.ac.in"
+                    }
+                }
+            ]
+        },
+        "competitive-programming": {
+            "domainLogo": "/images/domainLogos/CP_Negative.png",
+            "domainName": "Competitive Programming",
+            "domainDescription": "Competitive Programming is a thrilling and mentally engaging domain that focuses on solving algorithmic problems within a competitive setup. The major focus in competitive programming is finding quickly, the most optimized solution by minimizing both space and time complexity through a careful blend of mathematical concepts, data structures and algorithms. ",
+            "events": [
+                {
+                    "name": "Introduction to C++ and Basics of CP + Hands-on IDE Install",
+                    "date": "2024-08-31",
+                    "description": "The session was designed for beginners to provide a solid foundation in C++ programming, equipping them with practical tips and tricks that are crucial in competitive programming. Topics covered included: Basics of C++, Arrays, Vectors, & STL (Maps and Set), and Strings.",
+                    "backgroundImage": ""
+                },
+                {
+                    "name": "DSA Workshop Series - Lecture 1: Arrays",
+                    "date": "2024-10-26",
+                    "description": "The first session of the DSA Lecture Series focused on Arrays and Strings, covering concepts and hands-on coding. Problem-solving approaches apart from brute-force were discussed in detail. Topics covered included: Arrays (Bit manipulation, Maps, Kadane's Algorithm, and Sliding Window) and Strings.",
+                    "backgroundImage": "/images/domains/cp/events/DSA Workshop Series - Lecture 1 Arrays/img1.jpg"
+                },
+                {
+                    "name": "Tachyon CP Contest",
+                    "date": "2024-11-16",
+                    "description": "As a part of the Tachyon Fest, DW organized a CP contest with a prize pool of ₹10,000. Topics dealt with included: Arrays (2 Pointers and Sieve of Eratosthenes), Bit Manipulation, and Implementation Problems.",
+                    "backgroundImage": "/images/domains/cp/events/Tachyon CP Contest/img.png"
+                }
+            ],
+            "members": [
+                {
+                    "photo": "/images/domains/cp/members/Sudhanva.jpg",
+                    "name": "Sudhanva Bharadwaj BM",
+                    "club": "Competitive Programming",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "",
+                        "github": "bmsvinci1729",
+                        "linkedin": "sudhanva321",
+                        "email": "cs23b051@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/Ashish.jpg",
+                    "name": "Ashish Raj",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "Ashishraj003",
+                        "linkedin": "ashish-raj-4585a6329",
+                        "email": "cs22b055@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/Anuj Sharma.jpg",
+                    "name": "Anuj Sharma",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "@the_winner_as",
+                        "github": "The0winner0",
+                        "linkedin": "anuj-sharma-76448726b",
+                        "email": "cs22b007@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/B.N.A.B.SaiKrishna.jpg",
+                    "name": "B.N.A.B. Sai Krishna",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "krishnabrahmajosyula",
+                        "linkedin": "Sai Krishna Brahmajosyula",
+                        "email": "cs23b057@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/TrilokS.jpg",
+                    "name": "Trilok S",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "",
+                        "linkedin": "trilok-shetty-353641287",
+                        "email": "me23b049@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/SayanKundu.jpg",
+                    "name": "Sayan Kundu",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "_sxyxn.__",
+                        "github": "electro-coder",
+                        "linkedin": "sayan-kundu-672b77257",
+                        "email": "ee22b060@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/AtharvNagar.jpeg",
+                    "name": "Atharv Nagar",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "_athaxr",
+                        "github": "Atharvnagar007",
+                        "linkedin": "atharv-nagar",
+                        "email": "me22b006@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/DhyanamJanardhana.jpg",
+                    "name": "Dhyanam Janardhana",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "dhyanamj2005",
+                        "github": "Dhyanam2005",
+                        "linkedin": "Dhyanam Janardhana",
+                        "email": "cs23b014@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/AdithyaAnanth.jpg",
+                    "name": "Aditya Ananth",
+                    "club": "Competitive Programming",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "adithya_ananth_",
+                        "github": "adithya-ananth",
+                        "linkedin": "Adithya Ananth",
+                        "email": "cs23b001@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/ShivamPurve.jpeg",
+                    "name": "Shivan Purve",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "shivam-purve",
+                        "linkedin": "Shivam Purve",
+                        "email": "ch24b033@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cp/members/NiranjanaK.jpg",
+                    "name": "Niranjana K",
+                    "club": "Competitive Programming",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "niranjana_kannan2024",
+                        "github": "niranjana-kannan123",
+                        "linkedin": "Niranjana K",
+                        "email": "me24b032@iittp.ac.in"
+                    }
+                }
+            ]
+        },
+        "cyber-security": {
+            "domainLogo": "/images/domainLogos/Cyber_Negative.png",
+            "domainName": "Cyber Security",
+            "domainDescription": "",
+            "events": [
+                {
+                    "name": "Introduction to CyberSec",
+                    "date": "2024-10-02",
+                    "description": "",
+                    "backgroundImage": "/images/domains/cyberSec/events/Intro to CyberSec/img1.jpeg"
+                }
+            ],
+            "ongoingProjects": [
+                {
+                    "title": "Building Our Own Firewall",
+                    "description": "Developing a custom firewall for Windows using driver development techniques, with potential implementation for our college network.",
+                    "backgroundImage": "/images/domains/cyberSec/projects/Building Our Own Firewall/project.jpeg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "50"
+                },
+                {
+                    "title": "Website Phishing Detection Model",
+                    "description": "Creating a model to identify malicious websites by analyzing web links for phishing characteristics.",
+                    "backgroundImage": "/images/domains/cyberSec/projects/Website Phishing Detection Model/project.jpeg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "50"
+                }
+            ],
+            "members": [
+                {
+                    "photo": "/images/domains/cyberSec/members/S.Tharun.jpeg",
+                    "name": "S.Tharun",
+                    "club": "Cyber Security",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "",
+                        "github": "Tharun1236",
+                        "linkedin": "tharun-shivashankar-8a29ab26b",
+                        "email": "ee22b040@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cyberSec/members/AnirudhArrepu.jpeg",
+                    "name": "Anirudh Arrepu",
+                    "club": "Cyber Security",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "anirudharrepu",
+                        "github": "AnirudhArrepu",
+                        "linkedin": "AnirudhArrepu",
+                        "email": "cs23b008@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cyberSec/members/MVSonith.jpg",
+                    "name": "M V Sonith",
+                    "club": "Cyber Security",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "sonith17",
+                        "linkedin": "sonith-m-v-0a7a4b256",
+                        "email": "cs22b036@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/cyberSec/members/M.V.SaiSiddharth.jpg",
+                    "name": "M.V.Sai Siddharth",
+                    "club": "Cyber Security",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "sai_siddharth1",
+                        "github": "SaiSiddharth007",
+                        "linkedin": "M.V.Sai Siddharth",
+                        "email": "ce24b024@iittp.ac.in"
+                    }
+                }
+            ]
+        },
+        "software-engineering": {
+            "domainLogo": "/images/domainLogos/DevOps_Negative.png",
+            "domainName": "Software Engineering",
+            "domainDescription": "The Software Engineering domain at Digital Wizards is dedicated to cultivating technical excellence through innovative projects and skill-building initiatives throughout the year. We strive to equip students with practical knowledge and collaborative experience to thrive in the world of software development by conducting various workshops and sessions.",
+            "events": [
+                {
+                    "name": "Git, GitHub and Open-source",
+                    "date": "2024-10-06",
+                    "description": "Join us for an engaging workshop where you'll learn the essentials of Git, GitHub, and Open-source contributions, all while participating in Hacktoberfest 2024! This event is perfect for beginners eager to explore version control and collaborate on real-world projects. You’ll gain hands-on experience in setting up repositories, managing code changes, and making meaningful contributions to open-source software. Let’s celebrate open-source, boost your development skills, and kick-start your journey into the global developer community!",
+                    "backgroundImage": "/images/domains/se/events/Git, GitHub and Open-source/img2.jpg"
+                }
+            ],
+            "ongoingProjects": [
+                {
+                    "title": "SkillSync",
+                    "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions.",
+                    "backgroundImage": "/images/domains/se/projects/SkillSync/project.jpeg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "0"
+                },
+                {
+                    "title": "Advanced To-Do App",
+                    "description": "A task management app offering personal task tracking, group project discussion tools, and assignment deadline tracking.",
+                    "backgroundImage": "/images/domains/se/projects/Advanced To-Do App/project.jpg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "80"
+                }
+            ],
+            "members": [
+                {
+                    "photo": "/images/domains/se/members/ViramgamaJaimin.jpg",
+                    "name": "Viramgama Jaimin",
+                    "club": "Software Engineering",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "jaimin.v_22",
+                        "github": "i-apex",
+                        "linkedin": "jaiminv",
+                        "email": "cs22b051@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/se/members/TanguturiMokshithReddy.jpg",
+                    "name": "Tanguturi Mokshith Reddy",
+                    "club": "Software Engineering",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "mokshith3286",
+                        "github": "Mokshith1708",
+                        "linkedin": "mokshithreddytanguturi",
+                        "email": "cs22b046@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/se/members/Ikshitha.jpg",
+                    "name": "Ikshitha",
+                    "club": "Software Engineering",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "__ikshi__thaa",
+                        "github": "Ikshitha1004",
+                        "linkedin": "ikshitha-janarthanan",
+                        "email": "cs22b027@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/se/members/AniketJohri.jpg",
+                    "name": "Aniket Johri",
+                    "club": "Software Engineering",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "aniket.johri",
+                        "github": "Error-404-NotFound",
+                        "linkedin": "aniket-johri-082a83257",
+                        "email": "cs22b028@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/se/members/KidambiVenkataSrikrishna.jpg",
+                    "name": "Kidambi Venkata Srikrishna",
+                    "club": "Software Engineering",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "SrikrishnaKidambi",
+                        "linkedin": "Venkata Srikrishna Kidambi",
+                        "email": "cs23b058@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/se/members/AnkitSinha.jpg",
+                    "name": "Ankit Sinha",
+                    "club": "Software Engineering",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "ankitsinha8001",
+                        "github": "Quantum-Codes",
+                        "linkedin": "-ankit-sinha",
+                        "email": "ce24b003@iittp.ac.in"
+                    }
+                }
+            ]
+        },
+        "web-development": {
+            "domainLogo": "/images/domainLogos/WebDevLogo.png",
+            "domainName": "Web Development",
+            "domainDescription": "",
+            "events": [
+                {
+                    "name": "Workshop on HTML, CSS and JavaScript",
+                    "date": "2024-09-28",
+                    "description": "Learn the fundamentals of web development in this beginner-friendly workshop covering HTML, CSS, and JavaScript. Build your first interactive webpage and kick-start your journey into the world of web development!",
+                    "backgroundImage": "/images/domains/webDev/events/Workshop on HTML, CSS and JavaScript/img3.jpg"
+                }
+            ],
+            "ongoingProjects": [
+                {
+                    "title": "Digital Wizards Website",
+                    "description": "A comprehensive website featuring an overview, events, team profiles, resources, blogs, alumni highlights, and an admin dashboard for efficient content and member management.",
+                    "backgroundImage": "/images/domains/WebDev/Projects/DWWebsite/img2.png",
+                    "githubLink": "https://github.com/codeclubiittp/Digital-Wizards-Website",
+                    "progress": "90"
+                },
+                {
+                    "title": "SkillSync",
+                    "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions.",
+                    "backgroundImage": "/images/domains/webDev/projects/SkillSync/project.jpeg",
+                    "githubLink": "https://github.com/codeclubiittp/",
+                    "progress": "0"
+                }
+            ],
+            "members": [
+                {
+                    "photo": "/images/domains/webDev/members/Akilesh.jpeg",
+                    "name": "P Akilesh",
+                    "club": "Web Development",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "akil.1304",
+                        "github": "Akileshdash",
+                        "linkedin": "akileshp",
+                        "email": "cs22b040@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/webDev/members/SasaankJanapati.jpg",
+                    "name": "Sasaank Janapati",
+                    "club": "Web Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "sasaank2401",
+                        "github": "SasaankJanapati",
+                        "linkedin": "sasaank-janapati-25056b29a",
+                        "email": "cs22b059@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/webDev/members/ArthPatel.jpg",
+                    "name": "Arth Patel",
+                    "club": "Web Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "xe.arth",
+                        "github": "ArthPatel02",
+                        "linkedin": "arthpatel02",
+                        "email": "ce22b008@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/webDev/members/AmitJomy.jpg",
+                    "name": "Amit Jomy",
+                    "club": "Web Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "amit_jomy",
+                        "github": "amitjomy007",
+                        "linkedin": "amitjomy",
+                        "email": "me23b003@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/WebDev/members/DhruvPokhriyal.jpeg",
+                    "name": "Dhruv Pokhriyal",
+                    "club": "Web Development",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "dhruv_pokhriyal_2006",
+                        "github": "DhruvPokhriyal",
+                        "linkedin": "Dhruv Pokhriyal",
+                        "email": "cs24b010@iittp.ac.in"
+                    }
+                }
+            ]
+        },
+        "social-media": {
+            "domainLogo": "",
+            "domainName": "Social Media",
+            "domainDescription": "",
+            "events": [],
+            "ongoingProjects": [],
+            "members": [
+                {
+                    "photo": "/images/domains/socialMedia/members/Snehitha.jpeg",
+                    "name": "P Snehitha",
+                    "club": "Social Media",
+                    "role": "Domain Head",
+                    "socials": {
+                        "instagram": "snehitha13_12",
+                        "github": "Snehitha1312",
+                        "linkedin": "p-snehitha-608766266",
+                        "email": "cs22b041@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/socialMedia/members/ViramgamaJaimin.jpg",
+                    "name": "Viramgama Jaimin",
+                    "club": "Software Engineering",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "jaimin.v_22",
+                        "github": "i-apex",
+                        "linkedin": "jaiminv",
+                        "email": "cs22b051@iittp.ac.in"
+                    }
+                },
+                {
+                    "photo": "/images/domains/socialMedia/members/Kidambi Venkata Srikrishna.jpg",
+                    "name": "Kidambi Venkata Srikrishna",
+                    "club": "Social Media",
+                    "role": "Core Member",
+                    "socials": {
+                        "instagram": "",
+                        "github": "SrikrishnaKidambi",
+                        "linkedin": "venkata-srikrishna-kidambi-6b45bb287",
+                        "email": "cs23b058@iittp.ac.in"
+                    }
+                }
+            ]
+        }
     }
-  ]
-  ,
-  "domains" : {
-    "app-development": {
-      "domainLogo": "/images/domainLogos/App_Negative.png",
-      "domainName": "App Development",
-      "domainDescription": "We're a passionate team of three, diving deep into the world of app development! Our domain focuses on creating interactive, user-friendly solutions that simplify everyday tasks and enhance connectivity. We also host exciting app dev sessions to exchange ideas, sharpen skills, and inspire innovation—because building great apps starts with a great community!",
-      "events": [
-        {
-          "name": "Git, Docker and Firebase",
-          "date": "2024-08-17",
-          "description": "Conducted an interesting session on Git, Docker, and Firebase.",
-          "backgroundImage": "/images/domains/AppDev/events/Git, Docker and Firebase/img1.jpg"
-        },
-        {
-          "name": "React Native X Firebase",
-          "date": "2024-09-21",
-          "description": "We have conducted an interactive session on React Native and Firebase with a demo.",
-          "backgroundImage": ""
-        },
-        {
-          "name": "Flutter X Firebase",
-          "date": "2024-10-24",
-          "description": "Our team conducted an interactive hands-on development session with Flutter.",
-          "backgroundImage": "/images/domains/AppDev/events/Flutter X Firebase/img1.jpg"
-        }
-      ],
-      "ongoingProjects": [
-        {
-          "title": "IIT Tirupati Utility App",
-          "description": "A comprehensive app providing centralized file access, transport schedules, event management with notifications, a directory of local services, and optional blog and event scheduler features.",
-          "backgroundImage": "/images/domains/AppDev/Projects/IIT Tirupati Utility App/project.jpeg",
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "10"
-        }
-      ],
-      "members": [
-        {
-          "photo": "/images/domains/appDev/members/ChitrakshVasantati.jpg",
-          "name": "Chitraksh Vasantati",
-          "club": "App Development",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "cv_23076",
-            "github": "VasantatiChitraksh",
-            "linkedin": "chitraksh-vasantati",
-            "email": "cs23b054@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/appDev/members/AnirudhArrepu.jpeg",
-          "name": "Anirudh Arrepu",
-          "club": "App Development",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "anirudharrepu",
-            "github": "AnirudhArrepu",
-            "linkedin": "AnirudhArrepu",
-            "email": "cs23b008@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/appDev/members/NiranjanM.jpg",
-          "name": "Niranjan M",
-          "club": "App Development",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "iamnir2401",
-            "github": "all-coder",
-            "linkedin": "niranjan-m-038806292",
-            "email": "me23b036@iittp.ac.in"
-          }
-        }
-      ]
-    },
-    "architecture": {
-      "domainLogo": "/images/domainLogos/C.Arch_Negative.png",
-      "domainName": "Architecture",
-      "domainDescription": "Explore the cutting-edge technologies behind High-Performance Computing (HPC)! This domain focuses on the principles of CPU and GPU architectures, parallel processing, and system scalability. Learn how modern processors are designed, how GPUs accelerate computations, and how parallel algorithms transform the way we solve large-scale problems. Whether you're passionate about optimizing performance, exploring distributed computing, or advancing HPC applications, this domain provides the knowledge and skills to push the boundaries of computational efficiency.",
-      "events": [
-        {
-          "name": "Introduction to CUDA Programming",
-          "date": "2024-11-13",
-          "description": "This session introduced the basics of CUDA programming, focusing on GPU computing and parallel processing concepts. Participants learned foundational skills to write and execute simple CUDA programs, gaining insight into how GPUs accelerate computation. The session provided a starting point for exploring high-performance programming and solving real-world computational challenges.",
-          "backgroundImage": "/images/domains/arch/events/Introduction to CUDA Programming/img1.jpeg"
-        }
-      ],
-      "ongoingProjects": [
-        {
-          "title": "Parallel Computing for GANs",
-          "description": "Implementing a Generative Adversarial Network (GAN) using parallel computing techniques to accelerate training, manage larger datasets, and enhance output quality. The project utilizes CUDA for GPU programming and PyTorch for GAN development, requiring access to the Institute's GPU cluster for testing and validation.",
-          "backgroundImage": "/images/domains/arch/projects/Parallel Computing for GANs/img1.jpeg",
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "30"
-        }
-      ],
-      "members": [
-        {
-          "photo": "/images/domains/arch/members/AyushGupta.jpg",
-          "name": "Ayush Gupta",
-          "club": "Computer Architecture",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "_.ayushhh.__._",
-            "github": "ayushhwho",
-            "linkedin": "ayush-gupta-168300283",
-            "email": "ee22b005@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/arch/members/SuriyaaMM.jpg",
-          "name": "Suriyaa MM",
-          "club": "Computer Architecture",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "mms_2705",
-            "github": "SuriyaaMM",
-            "linkedin": "Suriyaa MM",
-            "email": "ee23b054@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/arch/members/PDharani.jpg",
-          "name": "P Dharani",
-          "club": "Computer Architecture",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "dharani_parvatham",
-            "github": "Srihanu1999",
-            "linkedin": "Dharani P",
-            "email": "ee23b069@iittp.ac.in"
-          }
-        }
-      ]
-    },
-    "competitive-programming": {
-      "domainLogo": "/images/domainLogos/CP_Negative.png",
-      "domainName": "Competitive Programming",
-      "domainDescription": "Competitive Programming is a thrilling and mentally engaging domain that focuses on solving algorithmic problems within a competitive setup. The major focus in competitive programming is finding quickly, the most optimized solution by minimizing both space and time complexity through a careful blend of mathematical concepts, data structures and algorithms. ",
-      "events": [
-        {
-          "name": "Introduction to C++ and Basics of CP + Hands-on IDE Install",
-          "date": "2024-08-31",
-          "description": "The session was designed for beginners to provide a solid foundation in C++ programming, equipping them with practical tips and tricks that are crucial in competitive programming. Topics covered included: Basics of C++, Arrays, Vectors, & STL (Maps and Set), and Strings.",
-          "backgroundImage": ""
-        },
-        {
-          "name": "DSA Workshop Series - Lecture 1: Arrays",
-          "date": "2024-10-26",
-          "description": "The first session of the DSA Lecture Series focused on Arrays and Strings, covering concepts and hands-on coding. Problem-solving approaches apart from brute-force were discussed in detail. Topics covered included: Arrays (Bit manipulation, Maps, Kadane's Algorithm, and Sliding Window) and Strings.",
-          "backgroundImage": "/images/domains/cp/events/DSA Workshop Series - Lecture 1 Arrays/img1.jpg"
-        },
-        {
-          "name": "Tachyon CP Contest",
-          "date": "2024-11-16",
-          "description": "As a part of the Tachyon Fest, DW organized a CP contest with a prize pool of ₹10,000. Topics dealt with included: Arrays (2 Pointers and Sieve of Eratosthenes), Bit Manipulation, and Implementation Problems.", 
-          "backgroundImage": "/images/domains/cp/events/Tachyon CP Contest/img.png"
-        }
-      ],
-      "members": [
-        {
-          "photo": "/images/domains/cp/members/Sudhanva.jpg",
-          "name": "Sudhanva Bharadwaj BM",
-          "club": "Competitive Programming",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "",
-            "github": "bmsvinci1729",
-            "linkedin": "sudhanva321",
-            "email": "cs23b051@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cp/members/Ashish.jpg",
-          "name": "Ashish Raj",
-          "club": "Competitive Programming",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "",
-            "github": "Ashishraj003",
-            "linkedin": "ashish-raj-4585a6329",
-            "email": "cs22b055@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cp/members/Anuj Sharma.jpg",
-          "name": "Anuj Sharma",
-          "club": "Competitive Programming",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "@the_winner_as",
-            "github": "The0winner0",
-            "linkedin": "anuj-sharma-76448726b",
-            "email": "cs22b007@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cp/members/B.N.A.B.SaiKrishna.jpg",
-          "name": "B.N.A.B. Sai Krishna",
-          "club": "Competitive Programming",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "",
-            "github": "krishnabrahmajosyula",
-            "linkedin": "Sai Krishna Brahmajosyula",
-            "email": "cs23b057@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cp/members/TrilokS.jpg",
-          "name": "Trilok S",
-          "club": "Competitive Programming",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "",
-            "github": "",
-            "linkedin": "trilok-shetty-353641287",
-            "email": "me23b049@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cp/members/SayanKundu.jpg",
-          "name": "Sayan Kundu",
-          "club": "Competitive Programming",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "_sxyxn.__",
-            "github": "electro-coder",
-            "linkedin": "sayan-kundu-672b77257",
-            "email": "ee22b060@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cp/members/AtharvNagar.jpeg",
-          "name": "Atharv Nagar",
-          "club": "Competitive Programming",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "_athaxr",
-            "github": "Atharvnagar007",
-            "linkedin": "atharv-nagar",
-            "email": "me22b006@iittp.ac.in"
-          }
-        }
-      ]
-    },
-    "cyber-security": {
-      "domainLogo": "/images/domainLogos/Cyber_Negative.png",
-      "domainName": "Cyber Security",
-      "domainDescription": "",
-      "events": [
-        {
-          "name": "Introduction to CyberSec",
-          "date": "2024-10-02",
-          "description": "",
-          "backgroundImage": "/images/domains/cyberSec/events/Intro to CyberSec/img1.jpeg"
-        }
-      ],
-      "ongoingProjects": [
-        {
-          "title": "Building Our Own Firewall",
-          "description": "Developing a custom firewall for Windows using driver development techniques, with potential implementation for our college network.",
-          "backgroundImage": "/images/domains/cyberSec/projects/Building Our Own Firewall/project.jpeg",        
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "50"
-        },
-        {
-          "title": "Website Phishing Detection Model",
-          "description": "Creating a model to identify malicious websites by analyzing web links for phishing characteristics.",
-          "backgroundImage": "/images/domains/cyberSec/projects/Website Phishing Detection Model/project.jpeg",        
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "50"
-        }
-      ],
-      "members": [
-        {
-          "photo": "/images/domains/cyberSec/members/S.Tharun.jpeg",
-          "name": "S.Tharun",
-          "club": "Cyber Security",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "",
-            "github": "Tharun1236",
-            "linkedin": "tharun-shivashankar-8a29ab26b",
-            "email": "ee22b040@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cyberSec/members/AnirudhArrepu.jpeg",
-          "name": "Anirudh Arrepu",
-          "club": "Cyber Security",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "anirudharrepu",
-            "github": "AnirudhArrepu",
-            "linkedin": "AnirudhArrepu",
-            "email": "cs23b008@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/cyberSec/members/MVSonith.jpg",
-          "name": "M V Sonith",
-          "club": "Cyber Security",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "",
-            "github": "sonith17",
-            "linkedin": "sonith-m-v-0a7a4b256",
-            "email": "cs22b036@iittp.ac.in"
-          }
-        }
-      ]
-    },
-    "software-engineering": {
-      "domainLogo": "/images/domainLogos/DevOps_Negative.png",
-      "domainName": "Software Engineering",
-      "domainDescription": "The Software Engineering domain at Digital Wizards is dedicated to cultivating technical excellence through innovative projects and skill-building initiatives throughout the year. We strive to equip students with practical knowledge and collaborative experience to thrive in the world of software development by conducting various workshops and sessions.",
-      "events": [
-        {
-          "name": "Git, GitHub and Open-source",
-          "date": "2024-10-06",
-          "description": "Join us for an engaging workshop where you'll learn the essentials of Git, GitHub, and Open-source contributions, all while participating in Hacktoberfest 2024! This event is perfect for beginners eager to explore version control and collaborate on real-world projects. You’ll gain hands-on experience in setting up repositories, managing code changes, and making meaningful contributions to open-source software. Let’s celebrate open-source, boost your development skills, and kick-start your journey into the global developer community!",
-          "backgroundImage": "/images/domains/se/events/Git, GitHub and Open-source/img2.jpg"
-        }
-      ],
-      "ongoingProjects": [
-        {
-          "title": "SkillSync",
-          "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions.",
-          "backgroundImage": "/images/domains/se/projects/SkillSync/project.jpeg",        
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "0"
-        },
-        {
-          "title": "Advanced To-Do App",
-          "description": "A task management app offering personal task tracking, group project discussion tools, and assignment deadline tracking.",
-          "backgroundImage": "/images/domains/se/projects/Advanced To-Do App/project.jpg",        
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "80"
-        }
-      ],
-      "members": [
-        {
-          "photo": "/images/domains/se/members/ViramgamaJaimin.jpg",
-          "name": "Viramgama Jaimin",
-          "club": "Software Engineering",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "jaimin.v_22",
-            "github": "i-apex",
-            "linkedin": "jaiminv",
-            "email": "cs22b051@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/se/members/TanguturiMokshithReddy.jpg",
-          "name": "Tanguturi Mokshith Reddy",
-          "club": "Software Engineering",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "mokshith3286",
-            "github": "Mokshith1708",
-            "linkedin": "mokshithreddytanguturi",
-            "email": "cs22b046@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/se/members/Ikshitha.jpg",
-          "name": "Ikshitha",
-          "club": "Software Engineering",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "__ikshi__thaa",
-            "github": "Ikshitha1004",
-            "linkedin": "ikshitha-janarthanan",
-            "email": "cs22b027@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/se/members/AniketJohri.jpg",
-          "name": "Aniket Johri",
-          "club": "Software Engineering",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "aniket.johri",
-            "github": "Error-404-NotFound",
-            "linkedin": "aniket-johri-082a83257",
-            "email": "cs22b028@iittp.ac.in"
-          }
-        }
-      ]
-    },
-    "web-development": {
-      "domainLogo": "/images/domainLogos/WebDevLogo.png",
-      "domainName": "Web Development",
-      "domainDescription": "",
-      "events": [
-        {
-          "name": "Workshop on HTML, CSS and JavaScript",
-          "date": "2024-09-28",
-          "description": "Learn the fundamentals of web development in this beginner-friendly workshop covering HTML, CSS, and JavaScript. Build your first interactive webpage and kick-start your journey into the world of web development!",
-          "backgroundImage": "/images/domains/webDev/events/Workshop on HTML, CSS and JavaScript/img3.jpg"
-        }
-      ],
-      "ongoingProjects": [
-        {
-          "title": "Digital Wizards Website",
-          "description": "A comprehensive website featuring an overview, events, team profiles, resources, blogs, alumni highlights, and an admin dashboard for efficient content and member management.",
-          "backgroundImage": "/images/domains/WebDev/Projects/DWWebsite/img2.png",
-          "githubLink": "https://github.com/codeclubiittp/Digital-Wizards-Website",
-          "progress": "90"
-        },
-        {
-          "title": "SkillSync",
-          "description": "An all-in-one platform for programmers and recruiters with personalized spaces, live stats, community features, chats, news feeds, and improvement suggestions.",
-          "backgroundImage": "/images/domains/webDev/projects/SkillSync/project.jpeg",        
-          "githubLink": "https://github.com/codeclubiittp/",
-          "progress": "0"
-        }
-      ],
-      "members": [
-        {
-          "photo": "/images/domains/webDev/members/Akilesh.jpeg",
-          "name": "P Akilesh",
-          "club": "Web Development",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "akil.1304",
-            "github": "Akileshdash",
-            "linkedin": "akileshp",
-            "email": "cs22b040@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/webDev/members/SasaankJanapati.jpg",
-          "name": "Sasaank Janapati",
-          "club": "Web Development",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "sasaank2401",
-            "github": "SasaankJanapati",
-            "linkedin": "sasaank-janapati-25056b29a",
-            "email": "cs22b059@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/webDev/members/ArthPatel.jpg",
-          "name": "Arth Patel",
-          "club": "Web Development",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "xe.arth",
-            "github": "ArthPatel02",
-            "linkedin": "arthpatel02",
-            "email": "ce22b008@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/webDev/members/AmitJomy.jpg",
-          "name": "Amit Jomy",
-          "club": "Web Development",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "amit_jomy",
-            "github": "amitjomy007",
-            "linkedin": "amitjomy",
-            "email": "me23b003@iittp.ac.in"
-          }
-        }
-      ]
-    },
-    "social-media":{
-      "domainLogo": "",
-      "domainName": "Social Media",
-      "domainDescription": "",
-      "events": [],
-      "ongoingProjects": [],
-      "members": [
-        {
-          "photo": "/images/domains/socialMedia/members/Snehitha.jpeg",
-          "name": "P Snehitha",
-          "club": "Social Media",
-          "role": "Domain Head",
-          "socials": {
-            "instagram": "snehitha13_12",
-            "github": "Snehitha1312",
-            "linkedin": "p-snehitha-608766266",
-            "email": "cs22b041@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/socialMedia/members/ViramgamaJaimin.jpg",
-          "name": "Viramgama Jaimin",
-          "club": "Software Engineering",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "jaimin.v_22",
-            "github": "i-apex",
-            "linkedin": "jaiminv",
-            "email": "cs22b051@iittp.ac.in"
-          }
-        },
-        {
-          "photo": "/images/domains/socialMedia/members/Kidambi Venkata Srikrishna.jpg",
-          "name": "Kidambi Venkata Srikrishna",
-          "club": "Social Media",
-          "role": "Core Member",
-          "socials": {
-            "instagram": "",
-            "github": "SrikrishnaKidambi",
-            "linkedin": "venkata-srikrishna-kidambi-6b45bb287",
-            "email": "cs23b058@iittp.ac.in"
-          }
-        }
-      ]
-    }
-  }
 }
